@@ -116,20 +116,6 @@ const ru = {
       { value: "94%", label: "клиентов возвращаются" },
     ],
   },
-  slots: {
-    eyebrow: "Рулетка кейсов",
-    title: "Дёрните рычаг — соберём три кейса",
-    subtitle:
-      "В каждом окне реальная работа из портфолио и цифра, которую она принесла клиенту. Нажмите на выпавший кадр, чтобы открыть видео целиком.",
-    hint: "Дёрнуть",
-    spin: "Крутить барабаны",
-    idle: "Готов к запуску",
-    spinning: "Барабаны крутятся",
-    result: "Три кейса на табло",
-    jackpot: "Джекпот — три одинаковых",
-    empty: "Ждём запуска",
-    spins: "Спинов",
-  },
   testimonials: {
     eyebrow: "Отзывы",
     title: "Что говорят клиенты",
@@ -350,20 +336,6 @@ const en: Dictionary = {
       { value: "3.4×", label: "median ROAS" },
       { value: "94%", label: "clients come back" },
     ],
-  },
-  slots: {
-    eyebrow: "Case roulette",
-    title: "Pull the lever — get three cases",
-    subtitle:
-      "Every window holds a real project from the portfolio and the number it delivered. Click a landed frame to watch the full video.",
-    hint: "Pull",
-    spin: "Spin the reels",
-    idle: "Ready to spin",
-    spinning: "Reels spinning",
-    result: "Three cases on the board",
-    jackpot: "Jackpot — three of a kind",
-    empty: "Waiting for a spin",
-    spins: "Spins",
   },
   testimonials: {
     eyebrow: "Reviews",

@@ -128,29 +128,6 @@
   color: transparent;
 }
 
-/* Класс вешает сам <Cursor/>, только когда реально подменил системный курсор. */
-html.cursor-custom,
-html.cursor-custom * {
-  cursor: none;
-}
-
-html.cursor-custom input,
-html.cursor-custom textarea,
-html.cursor-custom select {
-  cursor: auto;
-}
-
-/* Лайтбокс живёт в top layer и перекрывает курсор любым z-index — возвращаем системный. */
-html.cursor-custom:has(dialog[open]),
-html.cursor-custom:has(dialog[open]) * {
-  cursor: auto;
-}
-
-/* Курсор сам стал кнопкой play — центральный бейдж на карточке дублировал бы его. */
-html.cursor-custom [data-play-badge] {
-  display: none;
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

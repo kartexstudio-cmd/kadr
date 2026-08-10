@@ -4,7 +4,6 @@ import "@/app/globals.css";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { defaultLocale, isLocale, locales } from "@/lib/i18n/config";
 import { site } from "@/lib/site";
-import { Cursor } from "@/components/ui/cursor";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
@@ -70,10 +69,7 @@ export default async function LangLayout({
 
   return (
     <html lang={lang} className={`${inter.variable} ${manrope.variable}`}>
-      <body className="min-h-dvh antialiased">
-        {children}
-        <Cursor />
-      </body>
+      <body className="min-h-dvh antialiased">{children}</body>
     </html>
   );
 }

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { resolveVideo, type VideoSource } from "@/lib/video";
 import { useLightbox } from "@/components/video/lightbox";
-import { PlayBadge } from "@/components/video/play-badge";
 
 export function ReelCard({
   source,
@@ -42,8 +41,7 @@ export function ReelCard({
       type="button"
       onClick={() => open({ source, title, subtitle: platform, aspect: "9/16" })}
       aria-label={`${playLabel}: ${title}`}
-      data-cursor="play"
-      className="group relative block aspect-[9/16] w-full overflow-hidden rounded-card border border-line bg-surface"
+      className="relative block aspect-[9/16] w-full overflow-hidden rounded-card border border-line bg-surface"
     >
       <Image
         src={preview.poster}
@@ -72,13 +70,6 @@ export function ReelCard({
 
       <span className="absolute left-3 top-3 rounded-full border border-white/15 bg-ink/60 px-2.5 py-1 text-[11px] font-medium backdrop-blur-sm">
         {platform}
-      </span>
-
-      <span
-        data-play-badge
-        className="absolute inset-0 grid place-items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100"
-      >
-        <PlayBadge size="sm" />
       </span>
 
       <span className="absolute inset-x-3 bottom-3 text-left font-display text-sm font-bold leading-tight">

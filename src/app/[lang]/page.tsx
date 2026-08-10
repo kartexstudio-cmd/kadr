@@ -3,7 +3,6 @@ import { Footer } from "@/components/site/footer";
 import { Hero } from "@/components/site/hero";
 import { ContactForm } from "@/components/site/contact-form";
 import { ClientsMarquee } from "@/components/site/clients-marquee";
-import { CaseSlots } from "@/components/site/case-slots";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { LightboxProvider } from "@/components/video/lightbox";
@@ -175,17 +174,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
               </Reveal>
             ))}
           </dl>
-        </Section>
-
-        {/* Рулетка кейсов */}
-        <Section
-          id="roulette"
-          eyebrow={t.slots.eyebrow}
-          title={t.slots.title}
-          subtitle={t.slots.subtitle}
-          className="bg-ink-soft"
-        >
-          <CaseSlots lang={lang} t={t.slots} playLabel={t.a11y.play} />
         </Section>
 
         {/* Отзывы */}

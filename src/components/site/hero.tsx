@@ -3,7 +3,6 @@
 import { motion, useReducedMotion } from "motion/react";
 import { HeroLoop } from "@/components/video/hero-loop";
 import { useLightbox } from "@/components/video/lightbox";
-import { PlayBadge } from "@/components/video/play-badge";
 import { Magnetic } from "@/components/ui/magnetic";
 import { heroVideo } from "@/lib/content";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
@@ -66,13 +65,11 @@ export function Hero({ t, scrollHint }: { t: Dictionary["hero"]; scrollHint: str
           <Magnetic strength={0.25}>
             <button
               type="button"
-              data-cursor="play"
               onClick={() =>
                 open({ source: heroVideo, title: t.reelLabel, aspect: "16/9" })
               }
-              className="group inline-flex items-center gap-3 rounded-full border border-line bg-ink/40 py-1.5 pl-1.5 pr-6 font-medium backdrop-blur-sm transition hover:border-accent/60"
+              className="inline-flex items-center gap-3 rounded-full border border-line bg-ink/40 px-6 py-3.5 font-medium backdrop-blur-sm transition hover:border-accent/60"
             >
-              <PlayBadge size="sm" />
               {t.secondary}
             </button>
           </Magnetic>

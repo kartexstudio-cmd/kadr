@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { resolveVideo, type VideoSource } from "@/lib/video";
 import { useLightbox } from "@/components/video/lightbox";
-import { PlayBadge } from "@/components/video/play-badge";
 
 export function WorkCard({
   source,
@@ -35,7 +34,6 @@ export function WorkCard({
         type="button"
         onClick={() => open({ source, title, subtitle: client, aspect: "16/9" })}
         aria-label={`${playLabel}: ${title}`}
-        data-cursor="play"
         className="relative block w-full overflow-hidden rounded-card border border-line bg-surface"
       >
         <span className="relative block aspect-video">
@@ -50,13 +48,6 @@ export function WorkCard({
         </span>
 
         <span className="absolute inset-0 bg-gradient-to-t from-ink via-ink/25 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-95" />
-
-        <span
-          data-play-badge
-          className="absolute inset-0 grid place-items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100"
-        >
-          <PlayBadge />
-        </span>
 
         <span className="absolute left-4 top-4 rounded-full border border-white/15 bg-ink/60 px-3 py-1 text-xs font-medium backdrop-blur-sm">
           {tag}
