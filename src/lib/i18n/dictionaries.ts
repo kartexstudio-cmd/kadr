@@ -2,10 +2,10 @@ import type { Locale } from "@/lib/i18n/config";
 
 const ru = {
   meta: {
-    title: "KADR — креативная студия видеомонтажа, 3D и 2D-анимации",
+    title: "Nitroreel — видеокреативы и трейлеры для мобильных игр",
     description:
-      "Монтаж, 3D и 2D-анимация и перформанс-креативы для брендов. Пакет из 10 креативов за 5 рабочих дней — от сценария до адаптаций под площадки.",
-    ogAlt: "KADR — креативная студия видео и анимации",
+      "UA-креативы, трейлеры и cinematic-ролики для мобильных игр. Батч из 10 креативов за 5 рабочих дней — от гипотезы до burst-теста в сетях.",
+    ogAlt: "Nitroreel — студия видеокреативов для мобильных игр",
   },
   a11y: {
     skip: "Перейти к содержимому",
@@ -26,92 +26,92 @@ const ru = {
     contact: "Обсудить проект",
   },
   hero: {
-    eyebrow: "Креативная студия полного цикла",
-    titleLead: "Видео, которое",
-    titleAccent: "досматривают",
-    titleTail: "до конца",
+    eyebrow: "Видеокреативы для мобильных игр",
+    titleLead: "Креативы, которые",
+    titleAccent: "снижают",
+    titleTail: "CPI",
     subtitle:
-      "Монтаж, 3D и 2D-анимация и перформанс-креативы для брендов и in-house маркетинга. Забираем сырые футажи и возвращаем готовый пакет под все площадки.",
+      "UA-креативы, трейлеры и cinematic-ролики для мобильных игр. Заводим гипотезы в продакшн и тестируем хуки быстрее, чем аудитория успевает проскроллить дальше.",
     primary: "Обсудить проект",
     secondary: "Смотреть шоурил",
     reelLabel: "Шоурил 2026",
     stats: [
-      { value: "480+", label: "креативов в год" },
-      { value: "5 дней", label: "средний срок пакета" },
-      { value: "12", label: "стран у клиентов" },
+      { value: "600+", label: "креативов в год" },
+      { value: "48 ч", label: "до первого теста хуков" },
+      { value: "30+", label: "игровых тайтлов" },
     ],
   },
-  clients: {
-    label: "С нами работают",
+  genres: {
+    label: "Форматы и жанры",
   },
   services: {
     eyebrow: "Услуги",
     title: "Четыре направления, одна команда",
     subtitle:
-      "Не передаём проект между подрядчиками: сценарий, съёмка, графика и адаптации живут внутри одной студии.",
+      "Не передаём проект между подрядчиками: сценарий, продакшн, графика и адаптации под сети живут внутри одной студии.",
     items: [
       {
-        title: "Видеомонтаж и пост-продакшн",
-        text: "Сборка, ритм, цветокоррекция, звук и субтитры. Работаем с вашим материалом или снимаем сами.",
-        points: ["Монтаж и ритм", "Colour grading", "Звук и субтитры"],
+        title: "UA и перформанс-креативы",
+        text: "Хуки, гипотезы и адаптации под Meta Ads, TikTok, Google Ads UA и Unity Ads. Тестируем связки быстро и докручиваем то, что держит CPI.",
+        points: ["Хуки и гипотезы", "Burst-тестирование", "Адаптации под сети"],
+      },
+      {
+        title: "Трейлеры и cinematic-ролики",
+        text: "Лаунч-трейлеры для App Store и Google Play, тизеры к обновлениям и ивентам. Показываем игру так, чтобы в неё захотелось зайти.",
+        points: ["Store-трейлеры", "Тизеры к ивентам", "Cinematic-сторителлинг"],
       },
       {
         title: "3D-анимация и CGI",
-        text: "Фотореалистичные рендеры продукта, разлёты, симуляции. Показываем то, что невозможно снять.",
-        points: ["Product CGI", "Симуляции", "Look development"],
+        text: "Катсцены, рендеры персонажей и окружений, экшн-сцены для трейлеров. Даём картинку, которую движок в реальном времени пока не выдаёт.",
+        points: ["Катсцены", "Рендеры персонажей", "Экшн-анимация"],
       },
       {
         title: "2D-анимация и моушн",
-        text: "Объясняющие ролики, инфографика, титры и брендовые системы движения под гайдлайн.",
-        points: ["Explainer-ролики", "Инфографика", "Motion-гайдлайны"],
-      },
-      {
-        title: "Перформанс-креативы",
-        text: "Гипотезы, хуки, UGC и адаптации под Reels, TikTok, Shorts и in-app. Считаем метрики, а не лайки.",
-        points: ["Хуки и гипотезы", "UGC-продакшн", "Адаптации под площадки"],
+        text: "UI-моушн, анимация иконок, ролики к обновлениям и ивентам, обучающая анимация для онбординга.",
+        points: ["UI-моушн", "Анимация иконок", "Онбординг-анимация"],
       },
     ],
   },
   work: {
     eyebrow: "Работы",
-    title: "Кейсы, которые дали цифры",
+    title: "Креативы, которые снизили CPI",
     subtitle: "Выберите проект — видео откроется в плеере со звуком.",
     filterAll: "Все",
     result: "Результат",
   },
   reels: {
     eyebrow: "Вертикальные форматы",
-    title: "Креативы под ленту",
+    title: "UA-креативы под ленту",
     subtitle:
-      "Каждый горизонтальный ролик пересобираем в 9:16 — с новым хуком, крупностями и субтитрами под площадку.",
+      "Каждый ролик собираем в 9:16 с новым хуком под TikTok, Reels и Shorts — тестируем связки быстрее, чем аудитория успевает проскроллить.",
   },
   process: {
     eyebrow: "Процесс",
     title: "Прозрачно на каждом шаге",
     steps: [
       {
-        title: "Бриф и цели",
-        text: "Разбираем продукт, аудиторию и метрику, за которую отвечает видео. 40 минут — и есть вводные.",
+        title: "Бриф и гипотезы",
+        text: "Разбираем игру, аудиторию и метрику — CPI, CTR, ROAS или store-конверсию. За 40 минут собираем пул гипотез для хуков.",
       },
       {
         title: "Сценарий и раскадровка",
-        text: "Показываем структуру, хуки и референсы до старта продакшна. Правки здесь стоят дёшево.",
+        text: "Показываем структуру хуков и референсы до старта продакшна. Правки здесь стоят дёшево.",
       },
       {
         title: "Продакшн",
-        text: "Съёмка, графика, анимация и звук. Промежуточные версии — в общем таймлайне с таймкод-комментариями.",
+        text: "Монтаж, анимация и звук. Собираем батч креативов параллельно, промежуточные версии — в общем таймлайне с таймкод-комментариями.",
       },
       {
-        title: "Итерации и масштабирование",
-        text: "Собираем адаптации под площадки, тестируем гипотезы и докручиваем то, что даёт результат.",
+        title: "Тест и масштабирование",
+        text: "Запускаем burst-тест в UA-сетях, смотрим на CTR и IPM и докручиваем то, что держит CPI.",
       },
     ],
   },
   stats: {
     title: "Цифры за 2025 год",
     items: [
-      { value: "480+", label: "выпущенных креативов" },
-      { value: "71%", label: "средняя досматриваемость" },
+      { value: "600+", label: "выпущенных креативов" },
+      { value: "38%", label: "среднее снижение CPI" },
       { value: "3,4×", label: "медианный ROAS" },
       { value: "94%", label: "клиентов возвращаются" },
     ],
@@ -122,21 +122,21 @@ const ru = {
     items: [
       {
         quote:
-          "Впервые подрядчик пришёл не с «красиво», а с гипотезами и метриками. Пакет креативов окупился на второй неделе теста.",
+          "Наконец подрядчик, который говорит языком UA, а не «красиво». Первый батч хуков снизил CPI на четверть за первую неделю burst-теста.",
         name: "Мария Левченко",
-        role: "Head of Growth, Lumen",
+        role: "UA Lead, Vortex Play",
       },
       {
         quote:
-          "3D-рендеры невозможно отличить от съёмки, а сроки они держат жёстко. Сняли с нас всю боль с адаптациями под площадки.",
+          "3D-рендеры невозможно отличить от геймплея, а сроки держат жёстко. Трейлер к обновлению попал в Featured в App Store в неделю релиза.",
         name: "Артём Гордеев",
-        role: "Бренд-директор, Aureus",
+        role: "Head of Publishing, NeonDash Games",
       },
       {
         quote:
-          "Работаем третий год. Единственная студия, которая сама предлагает, что докрутить, вместо ожидания ТЗ.",
+          "Работаем третий год. Единственная студия, которая сама предлагает, какой хук докрутить, вместо ожидания брифа.",
         name: "Ирина Соколова",
-        role: "CMO, Nordvest",
+        role: "Executive Producer, Meadowlark Games",
       },
     ],
   },
@@ -146,15 +146,19 @@ const ru = {
     items: [
       {
         q: "Сколько стоит проект?",
-        a: "Пакет из 10 перформанс-креативов начинается от 180 000 ₽. Имиджевый ролик с 3D — от 350 000 ₽. Точную смету присылаем в течение суток после брифа.",
+        a: "Батч из 10 UA-креативов начинается от 150 000 ₽. Cinematic-трейлер для стора — от 400 000 ₽. Точную смету присылаем в течение суток после брифа.",
       },
       {
         q: "Какие сроки?",
-        a: "Пакет креативов — 5 рабочих дней. Ролик с 3D-графикой — от 2 до 4 недель в зависимости от объёма сцен.",
+        a: "Батч UA-креативов — 5 рабочих дней, успевает в тот же спринт burst-теста. Трейлер с 3D — от 2 до 4 недель в зависимости от объёма сцен.",
       },
       {
-        q: "Работаете, если у нас нет отснятого материала?",
-        a: "Да. Можем снять сами, собрать из стоков и CGI или спродюсировать UGC с блогерами под вашу задачу.",
+        q: "С какими жанрами работаете?",
+        a: "С гиперкэжуал, казуальными, мидкор и gacha-проектами. Формат хуков и темп монтажа разный — под ваш жанр адаптируем сценарий, а не берём шаблон.",
+      },
+      {
+        q: "Работаете, если у нас нет отснятого геймплея?",
+        a: "Да. Можем записать геймплей сами по вашему билду, собрать сцену из движка и CGI или спродюсировать UGC-имитацию под вашу аудиторию.",
       },
       {
         q: "Сколько правок входит в стоимость?",
@@ -162,13 +166,13 @@ const ru = {
       },
       {
         q: "Кому принадлежат исходники?",
-        a: "Вам. После оплаты передаём проектные файлы, исходники и лицензии на использованные ассеты.",
+        a: "Вам. После оплаты передаём проектные файлы, исходники и лицензии на использованные ассеты — включая права на размещение в рекламных сетях.",
       },
     ],
   },
   contact: {
     eyebrow: "Контакты",
-    title: "Расскажите о задаче",
+    title: "Расскажите об игре",
     subtitle:
       "Ответим в течение рабочего дня, приложим релевантные кейсы и предварительную смету.",
     perks: [
@@ -192,7 +196,7 @@ const ru = {
         "Пока не знаю",
       ],
       message: "Задача",
-      messagePlaceholder: "Что за продукт, какая цель у видео, есть ли дедлайн",
+      messagePlaceholder: "Что за игра, какая цель у ролика (UA / трейлер), есть ли дедлайн",
       consent: "Согласен на обработку персональных данных",
       submit: "Отправить заявку",
       submitting: "Отправляем…",
@@ -209,7 +213,7 @@ const ru = {
     },
   },
   footer: {
-    tagline: "Креативная студия видеомонтажа, 3D и 2D-анимации.",
+    tagline: "Видеокреативы и трейлеры для мобильных игр.",
     navTitle: "Разделы",
     contactTitle: "Связаться",
     socialTitle: "Соцсети",
@@ -217,16 +221,31 @@ const ru = {
     privacy: "Политика конфиденциальности",
     madeWith: "Заглушки видео — CC-BY материалы Blender Foundation.",
   },
+  chat: {
+    bubbleLabel: "Спросить ассистента",
+    title: "Ассистент Nitroreel",
+    subtitle: "Отвечает по сайту: сроки, стоимость, жанры",
+    placeholder: "Задайте вопрос…",
+    send: "Отправить",
+    close: "Закрыть чат",
+    greeting:
+      "Привет! Отвечу на вопросы про сроки, стоимость, жанры и процесс работы. Для расчёта по конкретному проекту лучше оставить заявку в форме ниже.",
+    thinking: "Печатает…",
+    errorFallback:
+      "Не получилось получить ответ. Напишите нам на почту или в Telegram — ответим лично.",
+    rateLimitFallback:
+      "Слишком много вопросов подряд. Попробуйте через минуту или напишите в Telegram.",
+  },
 };
 
 type Dictionary = typeof ru;
 
 const en: Dictionary = {
   meta: {
-    title: "KADR — creative studio for video editing, 3D and 2D animation",
+    title: "Nitroreel — video creatives and trailers for mobile games",
     description:
-      "Editing, 3D and 2D animation and performance creatives for brands. Ten creatives in five working days — from script to platform adaptations.",
-    ogAlt: "KADR — creative video and animation studio",
+      "UA creatives, trailers and cinematic videos for mobile games. Ten creatives in five working days — from hypothesis to a burst test in ad networks.",
+    ogAlt: "Nitroreel — video creative studio for mobile games",
   },
   a11y: {
     skip: "Skip to content",
@@ -247,92 +266,92 @@ const en: Dictionary = {
     contact: "Start a project",
   },
   hero: {
-    eyebrow: "Full-cycle creative studio",
-    titleLead: "Video people",
-    titleAccent: "actually",
-    titleTail: "finish watching",
+    eyebrow: "Video creatives for mobile games",
+    titleLead: "Creatives that",
+    titleAccent: "lower",
+    titleTail: "CPI",
     subtitle:
-      "Editing, 3D and 2D animation and performance creatives for brands and in-house marketing teams. Send raw footage — get a full package ready for every platform.",
+      "UA creatives, trailers and cinematic videos for mobile games. We turn hypotheses into production and test hooks faster than the audience can scroll past.",
     primary: "Start a project",
     secondary: "Watch showreel",
     reelLabel: "Showreel 2026",
     stats: [
-      { value: "480+", label: "creatives per year" },
-      { value: "5 days", label: "average package turnaround" },
-      { value: "12", label: "countries served" },
+      { value: "600+", label: "creatives per year" },
+      { value: "48 h", label: "to the first hook test" },
+      { value: "30+", label: "game titles" },
     ],
   },
-  clients: {
-    label: "Trusted by",
+  genres: {
+    label: "Formats & genres",
   },
   services: {
     eyebrow: "Services",
     title: "Four disciplines, one team",
     subtitle:
-      "Nothing gets handed between vendors: script, shoot, graphics and adaptations all live inside one studio.",
+      "Nothing gets handed between vendors: script, production, graphics and network adaptations all live inside one studio.",
     items: [
       {
-        title: "Editing & post-production",
-        text: "Assembly, rhythm, colour grading, sound and subtitles. We work with your footage or shoot it ourselves.",
-        points: ["Editing & pacing", "Colour grading", "Sound & subtitles"],
+        title: "UA & performance creatives",
+        text: "Hooks, hypotheses and adaptations for Meta Ads, TikTok, Google Ads UA and Unity Ads. We test combinations fast and double down on whatever holds CPI.",
+        points: ["Hooks & hypotheses", "Burst testing", "Network adaptations"],
+      },
+      {
+        title: "Trailers & cinematic videos",
+        text: "Launch trailers for the App Store and Google Play, teasers for updates and events. We show the game in a way that makes people want to open it.",
+        points: ["Store trailers", "Event teasers", "Cinematic storytelling"],
       },
       {
         title: "3D animation & CGI",
-        text: "Photoreal product renders, exploded views, simulations. We show what a camera simply cannot.",
-        points: ["Product CGI", "Simulations", "Look development"],
+        text: "Cutscenes, character and environment renders, action sequences for trailers. We deliver the shot a real-time engine can't yet render.",
+        points: ["Cutscenes", "Character renders", "Action animation"],
       },
       {
         title: "2D animation & motion",
-        text: "Explainers, infographics, titles and brand motion systems built to your guidelines.",
-        points: ["Explainer videos", "Infographics", "Motion guidelines"],
-      },
-      {
-        title: "Performance creatives",
-        text: "Hypotheses, hooks, UGC and cutdowns for Reels, TikTok, Shorts and in-app. We report metrics, not likes.",
-        points: ["Hooks & hypotheses", "UGC production", "Platform adaptations"],
+        text: "UI motion, icon animation, update and event videos, onboarding motion that explains the game.",
+        points: ["UI motion", "Icon animation", "Onboarding motion"],
       },
     ],
   },
   work: {
     eyebrow: "Work",
-    title: "Cases that moved numbers",
+    title: "Creatives that brought CPI down",
     subtitle: "Pick a project — the video opens in a player with sound.",
     filterAll: "All",
     result: "Result",
   },
   reels: {
     eyebrow: "Vertical formats",
-    title: "Built for the feed",
+    title: "UA creatives for the feed",
     subtitle:
-      "Every landscape edit gets rebuilt in 9:16 — new hook, tighter framing and platform-native subtitles.",
+      "Every video is built in 9:16 with a new hook for TikTok, Reels and Shorts — we test combinations faster than the audience can scroll past.",
   },
   process: {
     eyebrow: "Process",
     title: "Transparent at every step",
     steps: [
       {
-        title: "Brief & goals",
-        text: "We map the product, the audience and the metric the video is accountable for. Forty minutes is enough.",
+        title: "Brief & hypotheses",
+        text: "We map the game, the audience and the metric — CPI, CTR, ROAS or store conversion. Forty minutes is enough for a pool of hook hypotheses.",
       },
       {
         title: "Script & storyboard",
-        text: "You see structure, hooks and references before production starts. Changes are cheap at this stage.",
+        text: "You see the hook structure and references before production starts. Changes are cheap at this stage.",
       },
       {
         title: "Production",
-        text: "Shoot, graphics, animation and sound. Work-in-progress cuts land in a shared timeline with timecoded comments.",
+        text: "Editing, animation and sound. We build a batch of creatives in parallel, work-in-progress cuts land in a shared timeline with timecoded comments.",
       },
       {
-        title: "Iterate & scale",
-        text: "We build platform cutdowns, test hypotheses and double down on whatever performs.",
+        title: "Test & scale",
+        text: "We launch a burst test in UA networks, watch CTR and IPM, and double down on whatever holds CPI.",
       },
     ],
   },
   stats: {
     title: "2025 in numbers",
     items: [
-      { value: "480+", label: "creatives delivered" },
-      { value: "71%", label: "average completion rate" },
+      { value: "600+", label: "creatives delivered" },
+      { value: "38%", label: "average CPI reduction" },
       { value: "3.4×", label: "median ROAS" },
       { value: "94%", label: "clients come back" },
     ],
@@ -343,21 +362,21 @@ const en: Dictionary = {
     items: [
       {
         quote:
-          "First vendor that showed up with hypotheses and metrics instead of “looks nice”. The package paid for itself in week two of testing.",
+          "Finally a vendor that speaks UA, not “looks nice”. The first batch of hooks cut CPI by a quarter in the first week of the burst test.",
         name: "Maria Levchenko",
-        role: "Head of Growth, Lumen",
+        role: "UA Lead, Vortex Play",
       },
       {
         quote:
-          "The 3D renders are indistinguishable from a real shoot, and they are ruthless about deadlines. All the platform-adaptation pain is gone.",
+          "The 3D renders are indistinguishable from gameplay, and they are ruthless about deadlines. The update trailer got Featured on the App Store the week it launched.",
         name: "Artem Gordeev",
-        role: "Brand Director, Aureus",
+        role: "Head of Publishing, NeonDash Games",
       },
       {
         quote:
-          "Third year together. The only studio that proposes what to improve instead of waiting for a spec.",
+          "Third year together. The only studio that proposes which hook to push next instead of waiting for a brief.",
         name: "Irina Sokolova",
-        role: "CMO, Nordvest",
+        role: "Executive Producer, Meadowlark Games",
       },
     ],
   },
@@ -367,15 +386,19 @@ const en: Dictionary = {
     items: [
       {
         q: "How much does a project cost?",
-        a: "A package of ten performance creatives starts at €1,800. A brand film with 3D starts at €3,500. You get an exact quote within a day of the brief.",
+        a: "A batch of ten UA creatives starts at €1,500. A cinematic store trailer starts at €4,000. You get an exact quote within a day of the brief.",
       },
       {
         q: "What are the timelines?",
-        a: "A creative package takes five working days. A film with 3D graphics takes two to four weeks depending on scene count.",
+        a: "A batch of UA creatives takes five working days — fits into the same burst-test sprint. A trailer with 3D takes two to four weeks depending on scene count.",
       },
       {
-        q: "Can you work without existing footage?",
-        a: "Yes. We can shoot it, build it from stock and CGI, or produce UGC with creators for your specific goal.",
+        q: "What genres do you work with?",
+        a: "Hyper-casual, casual, midcore and gacha titles. Hook format and cutting pace differ by genre — we adapt the script to yours, not the other way around.",
+      },
+      {
+        q: "Can you work without existing gameplay footage?",
+        a: "Yes. We can capture gameplay ourselves from your build, assemble a scene from the engine and CGI, or produce a UGC-style ad for your audience.",
       },
       {
         q: "How many revisions are included?",
@@ -383,13 +406,13 @@ const en: Dictionary = {
       },
       {
         q: "Who owns the source files?",
-        a: "You do. After payment we hand over project files, sources and licences for every asset used.",
+        a: "You do. After payment we hand over project files, sources and licences for every asset used — including rights to run them on ad networks.",
       },
     ],
   },
   contact: {
     eyebrow: "Contact",
-    title: "Tell us about the project",
+    title: "Tell us about the game",
     subtitle: "We reply within one working day with relevant cases and a ballpark quote.",
     perks: [
       "Reply within one working day",
@@ -412,7 +435,7 @@ const en: Dictionary = {
         "Not sure yet",
       ],
       message: "Project",
-      messagePlaceholder: "What is the product, what should the video achieve, any deadline",
+      messagePlaceholder: "What's the game, what should the video achieve (UA / trailer), any deadline",
       consent: "I agree to the processing of my personal data",
       submit: "Send request",
       submitting: "Sending…",
@@ -429,13 +452,26 @@ const en: Dictionary = {
     },
   },
   footer: {
-    tagline: "Creative studio for video editing, 3D and 2D animation.",
+    tagline: "Video creatives and trailers for mobile games.",
     navTitle: "Sections",
     contactTitle: "Contact",
     socialTitle: "Social",
     rights: "All rights reserved.",
     privacy: "Privacy policy",
     madeWith: "Placeholder footage is CC-BY material by Blender Foundation.",
+  },
+  chat: {
+    bubbleLabel: "Ask the assistant",
+    title: "Nitroreel assistant",
+    subtitle: "Answers from the site: timelines, pricing, genres",
+    placeholder: "Ask a question…",
+    send: "Send",
+    close: "Close chat",
+    greeting:
+      "Hi! I can answer questions about timelines, pricing, genres and how we work. For an exact quote on your project, it's best to use the form below.",
+    thinking: "Typing…",
+    errorFallback: "Couldn't get a reply. Please email us or reach out on Telegram — we'll answer personally.",
+    rateLimitFallback: "Too many questions in a row. Try again in a minute or message us on Telegram.",
   },
 };
 

@@ -3,12 +3,13 @@ import { Footer } from "@/components/site/footer";
 import { Hero } from "@/components/site/hero";
 import { ContactForm } from "@/components/site/contact-form";
 import { ClientsMarquee } from "@/components/site/clients-marquee";
+import { ChatWidget } from "@/components/site/chat-widget";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { LightboxProvider } from "@/components/video/lightbox";
 import { WorkCard } from "@/components/video/work-card";
 import { ReelCard } from "@/components/video/reel-card";
-import { clients, reels, works } from "@/lib/content";
+import { genres, reels, works } from "@/lib/content";
 import { defaultLocale, isLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { site } from "@/lib/site";
@@ -62,8 +63,8 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       <main id="main">
         <Hero t={t.hero} scrollHint={t.a11y.scrollHint} />
 
-        {/* Клиенты */}
-        <ClientsMarquee items={clients} label={t.clients.label} />
+        {/* Форматы и жанры */}
+        <ClientsMarquee items={genres} label={t.genres.label} />
 
         {/* Работы */}
         <Section id="work" eyebrow={t.work.eyebrow} title={t.work.title} subtitle={t.work.subtitle}>
@@ -268,6 +269,8 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       </main>
 
       <Footer lang={lang} t={t.footer} nav={nav} />
+
+      <ChatWidget lang={lang} t={t.chat} />
 
       <script
         type="application/ld+json"

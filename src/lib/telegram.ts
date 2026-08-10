@@ -1,4 +1,5 @@
 import type { Locale } from "@/lib/i18n/config";
+import { site } from "@/lib/site";
 
 export type LeadNotification = {
   name: string;
@@ -20,7 +21,7 @@ export async function notifyTelegram(lead: LeadNotification): Promise<DeliveryRe
   if (!token || !chatId) return "skipped";
 
   const text = [
-    "Новая заявка с сайта KADR",
+    `Новая заявка с сайта ${site.brand}`,
     "",
     `Имя: ${lead.name}`,
     `Email: ${lead.email}`,

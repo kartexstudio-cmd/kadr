@@ -18,6 +18,8 @@ const wrap = (min: number, max: number, value: number) => {
 };
 
 export function ClientsMarquee({ items, label }: { items: readonly string[]; label: string }) {
+  // Компонент общий: раньше нёс ленту клиентов, сейчас — жанры/форматы. Название файла
+  // и пропсов не меняли, чтобы не плодить переименования ради переименования.
   const reduced = useReducedMotion();
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
@@ -47,13 +49,13 @@ export function ClientsMarquee({ items, label }: { items: readonly string[]; lab
       </div>
       <div className="relative overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_8%,black_92%,transparent)]">
         <motion.ul style={{ x }} className="flex w-max items-center gap-16 px-8">
-          {[...items, ...items].map((client, index) => (
+          {[...items, ...items].map((item, index) => (
             <li
-              key={`${client}-${index}`}
+              key={`${item}-${index}`}
               aria-hidden={index >= items.length}
               className="font-display text-2xl font-bold tracking-tight text-muted/60"
             >
-              {client}
+              {item}
             </li>
           ))}
         </motion.ul>
