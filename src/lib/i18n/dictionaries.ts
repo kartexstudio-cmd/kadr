@@ -4,7 +4,7 @@ const ru = {
   meta: {
     title: "Nitroreel — видеокреативы и трейлеры для мобильных игр",
     description:
-      "UA-креативы, трейлеры и cinematic-ролики для мобильных игр. Батч из 10 креативов за 5 рабочих дней — от гипотезы до burst-теста в сетях.",
+      "UA-креативы, трейлеры и cinematic-ролики для мобильных игр. Визуал собираем через AI — дешевле и быстрее классического продакшна, поэтому тестируем 20+ хуков в батче.",
     ogAlt: "Nitroreel — студия видеокреативов для мобильных игр",
   },
   a11y: {
@@ -31,12 +31,12 @@ const ru = {
     titleAccent: "снижают",
     titleTail: "CPI",
     subtitle:
-      "UA-креативы, трейлеры и cinematic-ролики для мобильных игр. Заводим гипотезы в продакшн и тестируем хуки быстрее, чем аудитория успевает проскроллить дальше.",
+      "UA-креативы, трейлеры и cinematic-ролики для мобильных игр. Визуал собираем через AI-продакшн — это дешевле и быстрее классической съёмки, а хуков можно тестировать в разы больше на тот же бюджет.",
     primary: "Обсудить проект",
     secondary: "Смотреть шоурил",
     reelLabel: "Шоурил 2026",
     stats: [
-      { value: "600+", label: "креативов в год" },
+      { value: "1000+", label: "креативов в год" },
       { value: "48 ч", label: "до первого теста хуков" },
       { value: "30+", label: "игровых тайтлов" },
     ],
@@ -53,22 +53,22 @@ const ru = {
     items: [
       {
         title: "UA и перформанс-креативы",
-        text: "Хуки, гипотезы и адаптации под Meta Ads, TikTok, Google Ads UA и Unity Ads. Тестируем связки быстро и докручиваем то, что держит CPI.",
-        points: ["Хуки и гипотезы", "Burst-тестирование", "Адаптации под сети"],
+        text: "Хуки, гипотезы и адаптации под Meta Ads, TikTok, Google Ads UA и Unity Ads. Визуал собираем через AI — дешевле классической съёмки, поэтому тестируем не 8–10, а 20+ хуков за тот же бюджет.",
+        points: ["Хуки и гипотезы", "AI-продакшн визуала", "Burst-тест 20+ хуков"],
       },
       {
         title: "Трейлеры и cinematic-ролики",
-        text: "Лаунч-трейлеры для App Store и Google Play, тизеры к обновлениям и ивентам. Показываем игру так, чтобы в неё захотелось зайти.",
-        points: ["Store-трейлеры", "Тизеры к ивентам", "Cinematic-сторителлинг"],
+        text: "Лаунч-трейлеры для App Store и Google Play, тизеры к обновлениям и ивентам. Собираем через AI-генерацию и рендеры — быстрее классического CGI-конвейера, без потери в качестве картинки.",
+        points: ["Store-трейлеры", "Тизеры к ивентам", "AI-cinematic"],
       },
       {
         title: "3D-анимация и CGI",
-        text: "Катсцены, рендеры персонажей и окружений, экшн-сцены для трейлеров. Даём картинку, которую движок в реальном времени пока не выдаёт.",
-        points: ["Катсцены", "Рендеры персонажей", "Экшн-анимация"],
+        text: "Катсцены, рендеры персонажей и окружений, экшн-сцены для трейлеров. Генерируем через AI вместо ручного 3D-конвейера — быстрее и на порядок дешевле студийного рендера.",
+        points: ["Катсцены", "AI-рендеры персонажей", "Экшн-анимация"],
       },
       {
         title: "2D-анимация и моушн",
-        text: "UI-моушн, анимация иконок, ролики к обновлениям и ивентам, обучающая анимация для онбординга.",
+        text: "UI-моушн, анимация иконок, ролики к обновлениям и ивентам, обучающая анимация для онбординга — тоже через AI-инструменты, это ускоряет цикл правок.",
         points: ["UI-моушн", "Анимация иконок", "Онбординг-анимация"],
       },
     ],
@@ -84,7 +84,7 @@ const ru = {
     eyebrow: "Вертикальные форматы",
     title: "UA-креативы под ленту",
     subtitle:
-      "Каждый ролик собираем в 9:16 с новым хуком под TikTok, Reels и Shorts — тестируем связки быстрее, чем аудитория успевает проскроллить.",
+      "Каждый ролик собираем через AI-продакшн в 9:16 с новым хуком под TikTok, Reels и Shorts — тестируем в разы больше связок за тот же бюджет.",
   },
   process: {
     eyebrow: "Процесс",
@@ -100,7 +100,7 @@ const ru = {
       },
       {
         title: "Продакшн",
-        text: "Монтаж, анимация и звук. Собираем батч креативов параллельно, промежуточные версии — в общем таймлайне с таймкод-комментариями.",
+        text: "Собираем визуал через AI-инструменты, монтируем и сводим звук. Батч креативов готов быстрее классической съёмки — промежуточные версии в общем таймлайне с таймкод-комментариями.",
       },
       {
         title: "Тест и масштабирование",
@@ -111,7 +111,7 @@ const ru = {
   stats: {
     title: "Цифры за 2025 год",
     items: [
-      { value: "600+", label: "выпущенных креативов" },
+      { value: "1000+", label: "выпущенных креативов" },
       { value: "38%", label: "среднее снижение CPI" },
       { value: "3,4×", label: "медианный ROAS" },
       { value: "94%", label: "клиентов возвращаются" },
@@ -123,13 +123,13 @@ const ru = {
     items: [
       {
         quote:
-          "Наконец подрядчик, который говорит языком UA, а не «красиво». Первый батч хуков снизил CPI на четверть за первую неделю burst-теста.",
+          "Наконец подрядчик, который говорит языком UA, а не «красиво». Мы впервые протестировали 25 хуков в одном батче вместо привычных 8 — и всё равно вписались в старый бюджет.",
         name: "Мария Левченко",
         role: "UA Lead, Vortex Play",
       },
       {
         quote:
-          "3D-рендеры невозможно отличить от геймплея, а сроки держат жёстко. Трейлер к обновлению попал в Featured в App Store в неделю релиза.",
+          "AI-рендеры невозможно отличить от геймплея, а сроки держат жёстко. Трейлер к обновлению попал в Featured в App Store в неделю релиза.",
         name: "Артём Гордеев",
         role: "Head of Publishing, NeonDash Games",
       },
@@ -147,19 +147,19 @@ const ru = {
     items: [
       {
         q: "Сколько стоит проект?",
-        a: "Батч из 10 UA-креативов начинается от 150 000 ₽. Cinematic-трейлер для стора — от 400 000 ₽. Точную смету присылаем в течение суток после брифа.",
+        a: "Батч из 10 UA-креативов начинается от 120 000 ₽. Cinematic-трейлер для стора — от 300 000 ₽. AI-продакшн визуала дешевле классической съёмки — это и держит цену ниже рынка. Точную смету присылаем в течение суток после брифа.",
       },
       {
         q: "Какие сроки?",
-        a: "Батч UA-креативов — 5 рабочих дней, успевает в тот же спринт burst-теста. Трейлер с 3D — от 2 до 4 недель в зависимости от объёма сцен.",
+        a: "Батч UA-креативов — 3–5 рабочих дней, успевает в тот же спринт burst-теста. Трейлер с 3D-рендерами — от 1 до 3 недель в зависимости от объёма сцен, AI-продакшн заметно быстрее классического конвейера.",
       },
       {
         q: "С какими жанрами работаете?",
         a: "С гиперкэжуал, казуальными, мидкор и gacha-проектами. Формат хуков и темп монтажа разный — под ваш жанр адаптируем сценарий, а не берём шаблон.",
       },
       {
-        q: "Работаете, если у нас нет отснятого геймплея?",
-        a: "Да. Можем записать геймплей сами по вашему билду, собрать сцену из движка и CGI или спродюсировать UGC-имитацию под вашу аудиторию.",
+        q: "Это AI-генерация — не будет выглядеть дёшево?",
+        a: "Визуал собираем через современные AI-инструменты, но каждый кадр проходит ручную доработку, цветокор и монтаж — по качеству картинки не уступает классической съёмке или рендеру, а по цене и скорости выигрывает.",
       },
       {
         q: "Сколько правок входит в стоимость?",
@@ -245,7 +245,7 @@ const en: Dictionary = {
   meta: {
     title: "Nitroreel — video creatives and trailers for mobile games",
     description:
-      "UA creatives, trailers and cinematic videos for mobile games. Ten creatives in five working days — from hypothesis to a burst test in ad networks.",
+      "UA creatives, trailers and cinematic videos for mobile games. We build the visuals with AI — cheaper and faster than classic production, so we test 20+ hooks per batch.",
     ogAlt: "Nitroreel — video creative studio for mobile games",
   },
   a11y: {
@@ -272,12 +272,12 @@ const en: Dictionary = {
     titleAccent: "lower",
     titleTail: "CPI",
     subtitle:
-      "UA creatives, trailers and cinematic videos for mobile games. We turn hypotheses into production and test hooks faster than the audience can scroll past.",
+      "UA creatives, trailers and cinematic videos for mobile games. We build the visuals with AI production — cheaper and faster than a classic shoot, so we can test far more hooks on the same budget.",
     primary: "Start a project",
     secondary: "Watch showreel",
     reelLabel: "Showreel 2026",
     stats: [
-      { value: "600+", label: "creatives per year" },
+      { value: "1000+", label: "creatives per year" },
       { value: "48 h", label: "to the first hook test" },
       { value: "30+", label: "game titles" },
     ],
@@ -294,22 +294,22 @@ const en: Dictionary = {
     items: [
       {
         title: "UA & performance creatives",
-        text: "Hooks, hypotheses and adaptations for Meta Ads, TikTok, Google Ads UA and Unity Ads. We test combinations fast and double down on whatever holds CPI.",
-        points: ["Hooks & hypotheses", "Burst testing", "Network adaptations"],
+        text: "Hooks, hypotheses and adaptations for Meta Ads, TikTok, Google Ads UA and Unity Ads. We build the visuals with AI — cheaper than a classic shoot, so we test 20+ hooks instead of 8–10 on the same budget.",
+        points: ["Hooks & hypotheses", "AI visual production", "20+ hook burst test"],
       },
       {
         title: "Trailers & cinematic videos",
-        text: "Launch trailers for the App Store and Google Play, teasers for updates and events. We show the game in a way that makes people want to open it.",
-        points: ["Store trailers", "Event teasers", "Cinematic storytelling"],
+        text: "Launch trailers for the App Store and Google Play, teasers for updates and events. Built with AI generation and renders — faster than a classic CGI pipeline, without losing image quality.",
+        points: ["Store trailers", "Event teasers", "AI cinematic"],
       },
       {
         title: "3D animation & CGI",
-        text: "Cutscenes, character and environment renders, action sequences for trailers. We deliver the shot a real-time engine can't yet render.",
-        points: ["Cutscenes", "Character renders", "Action animation"],
+        text: "Cutscenes, character and environment renders, action sequences for trailers. Generated with AI instead of a manual 3D pipeline — faster and an order of magnitude cheaper than a studio render.",
+        points: ["Cutscenes", "AI character renders", "Action animation"],
       },
       {
         title: "2D animation & motion",
-        text: "UI motion, icon animation, update and event videos, onboarding motion that explains the game.",
+        text: "UI motion, icon animation, update and event videos, onboarding motion that explains the game — also built with AI tools, which speeds up the revision cycle.",
         points: ["UI motion", "Icon animation", "Onboarding motion"],
       },
     ],
@@ -325,7 +325,7 @@ const en: Dictionary = {
     eyebrow: "Vertical formats",
     title: "UA creatives for the feed",
     subtitle:
-      "Every video is built in 9:16 with a new hook for TikTok, Reels and Shorts — we test combinations faster than the audience can scroll past.",
+      "Every video is built with AI production in 9:16 with a new hook for TikTok, Reels and Shorts — we test far more combinations on the same budget.",
   },
   process: {
     eyebrow: "Process",
@@ -341,7 +341,7 @@ const en: Dictionary = {
       },
       {
         title: "Production",
-        text: "Editing, animation and sound. We build a batch of creatives in parallel, work-in-progress cuts land in a shared timeline with timecoded comments.",
+        text: "We build the visuals with AI tools, edit and mix sound. A batch of creatives is ready faster than a classic shoot — work-in-progress cuts land in a shared timeline with timecoded comments.",
       },
       {
         title: "Test & scale",
@@ -352,7 +352,7 @@ const en: Dictionary = {
   stats: {
     title: "2025 in numbers",
     items: [
-      { value: "600+", label: "creatives delivered" },
+      { value: "1000+", label: "creatives delivered" },
       { value: "38%", label: "average CPI reduction" },
       { value: "3.4×", label: "median ROAS" },
       { value: "94%", label: "clients come back" },
@@ -364,13 +364,13 @@ const en: Dictionary = {
     items: [
       {
         quote:
-          "Finally a vendor that speaks UA, not “looks nice”. The first batch of hooks cut CPI by a quarter in the first week of the burst test.",
+          "Finally a vendor that speaks UA, not “looks nice”. We tested 25 hooks in one batch for the first time instead of the usual 8 — and still stayed within the old budget.",
         name: "Maria Levchenko",
         role: "UA Lead, Vortex Play",
       },
       {
         quote:
-          "The 3D renders are indistinguishable from gameplay, and they are ruthless about deadlines. The update trailer got Featured on the App Store the week it launched.",
+          "The AI renders are indistinguishable from gameplay, and they are ruthless about deadlines. The update trailer got Featured on the App Store the week it launched.",
         name: "Artem Gordeev",
         role: "Head of Publishing, NeonDash Games",
       },
@@ -388,19 +388,19 @@ const en: Dictionary = {
     items: [
       {
         q: "How much does a project cost?",
-        a: "A batch of ten UA creatives starts at €1,500. A cinematic store trailer starts at €4,000. You get an exact quote within a day of the brief.",
+        a: "A batch of ten UA creatives starts at €1,200. A cinematic store trailer starts at €3,000. AI visual production is cheaper than a classic shoot — that's what keeps the price below the market rate. You get an exact quote within a day of the brief.",
       },
       {
         q: "What are the timelines?",
-        a: "A batch of UA creatives takes five working days — fits into the same burst-test sprint. A trailer with 3D takes two to four weeks depending on scene count.",
+        a: "A batch of UA creatives takes three to five working days — fits into the same burst-test sprint. A trailer with 3D renders takes one to three weeks depending on scene count — AI production is noticeably faster than a classic pipeline.",
       },
       {
         q: "What genres do you work with?",
         a: "Hyper-casual, casual, midcore and gacha titles. Hook format and cutting pace differ by genre — we adapt the script to yours, not the other way around.",
       },
       {
-        q: "Can you work without existing gameplay footage?",
-        a: "Yes. We can capture gameplay ourselves from your build, assemble a scene from the engine and CGI, or produce a UGC-style ad for your audience.",
+        q: "Is this AI-generated — won't it look cheap?",
+        a: "We build the visuals with modern AI tools, but every frame gets manual polish, colour grading and editing — the image quality matches a classic shoot or render, while the price and speed win.",
       },
       {
         q: "How many revisions are included?",

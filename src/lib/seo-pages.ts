@@ -40,40 +40,40 @@ export const seoPages: SeoPage[] = [
     intro: {
       ru: [
         "В hypercasual нет времени на разгон: если хук не сработал в первые 1,5 секунды, пользователь уже пролистал. Мы строим сценарий вокруг одного чёткого конфликта — не сюжета, а физического действия, которое считывается без звука.",
-        "Тестируем не ролик целиком, а отдельные хуки: снимаем 5–8 вариаций первых секунд и запускаем burst-тест, чтобы найти связку с лучшим CTR/IPM до того, как тратить бюджет на полную адаптацию под все форматы.",
+        "Тестируем не ролик целиком, а отдельные хуки: генерируем через AI 15–20+ вариаций первых секунд и запускаем burst-тест, чтобы найти связку с лучшим CTR/IPM до того, как тратить бюджет на полную адаптацию под все форматы.",
       ],
       en: [
         "There's no runway in hyper-casual: if the hook doesn't land in the first 1.5 seconds, the user has already scrolled past. We build the script around one clear conflict — not a story, a physical action that reads without sound.",
-        "We don't test the whole video, we test hooks: shooting 5–8 variations of the opening and running a burst test to find the combination with the best CTR/IPM before spending budget on full adaptations.",
+        "We don't test the whole video, we test hooks: generating 15–20+ variations of the opening with AI and running a burst test to find the combination with the best CTR/IPM before spending budget on full adaptations.",
       ],
     },
     bullets: {
       ru: [
         "Хуки без звука — считываются в mute-режиме ленты",
-        "Реальный геймплей, не постановка — иначе растёт uninstall",
+        "AI-генерация визуала — дешевле и быстрее классической съёмки",
         "Адаптация под Meta, TikTok, Google Ads UA, Unity Ads",
-        "Burst-тест 5–8 вариаций хука за один спринт",
+        "Burst-тест 15–20+ вариаций хука за один спринт",
       ],
       en: [
         "Sound-off hooks — read clearly in a muted feed",
-        "Real gameplay, not a staged mock-up — otherwise uninstalls climb",
+        "AI-generated visuals — cheaper and faster than a classic shoot",
         "Adaptations for Meta, TikTok, Google Ads UA, Unity Ads",
-        "Burst test of 5–8 hook variations in a single sprint",
+        "Burst test of 15–20+ hook variations in a single sprint",
       ],
     },
     faq: [
       {
         q: { ru: "Нужен ли отснятый геймплей?", en: "Do you need existing gameplay footage?" },
         a: {
-          ru: "Нет, можем записать сами по вашему билду — это не удорожает батч, если билд стабилен.",
-          en: "No, we can capture it ourselves from your build — this doesn't add to the batch cost if the build is stable.",
+          ru: "Не обязательно — можем сгенерировать визуал через AI по референсам вашей игры (скриншоты, арт, билд) или записать реальный геймплей, если для конкретного хука важна именно он.",
+          en: "Not necessarily — we can generate visuals with AI from your game's references (screenshots, art, build), or capture real gameplay when a specific hook calls for it.",
         },
       },
       {
         q: { ru: "Сколько хуков в одном батче?", en: "How many hooks are in one batch?" },
         a: {
-          ru: "Обычно 8–10 хуков на 3–4 базовых сценария — достаточно для статистически значимого burst-теста.",
-          en: "Usually 8–10 hooks across 3–4 base scripts — enough for a statistically meaningful burst test.",
+          ru: "Обычно 15–20 хуков на 3–4 базовых сценария — AI-продакшн позволяет генерировать больше вариаций за тот же бюджет, что даёт статистически надёжный burst-тест.",
+          en: "Usually 15–20 hooks across 3–4 base scripts — AI production lets us generate more variations on the same budget, giving a statistically solid burst test.",
         },
       },
     ],
@@ -97,22 +97,22 @@ export const seoPages: SeoPage[] = [
     intro: {
       ru: [
         "Аудитория midcore и RPG смотрит рекламу внимательнее, чем в hypercasual, и быстро считывает фальшь — постановочный геймплей или преувеличенная механика уводят в минус retention и review-score.",
-        "Строим креатив вокруг реальной механики: прокачка, редкий лут, PvP-момент — то, что игрок увидит в первые 10 минут после установки. Это снижает разрыв между обещанием в ролике и первой сессией, а значит держит D1 retention.",
+        "Строим креатив через AI-генерацию визуала вокруг реальной механики: прокачка, редкий лут, PvP-момент — то, что игрок увидит в первые 10 минут после установки. Это снижает разрыв между обещанием в ролике и первой сессией, а значит держит D1 retention.",
       ],
       en: [
         "Midcore and RPG audiences watch ads more carefully than hyper-casual ones and spot fakes fast — staged gameplay or an exaggerated mechanic drags down retention and review scores.",
-        "We build the creative around a real mechanic — a level-up, a rare loot drop, a PvP moment — something the player will actually see in the first ten minutes after install. That closes the gap between the ad's promise and the first session, which is what keeps D1 retention up.",
+        "We build the creative with AI-generated visuals around a real mechanic — a level-up, a rare loot drop, a PvP moment — something the player will actually see in the first ten minutes after install. That closes the gap between the ad's promise and the first session, which is what keeps D1 retention up.",
       ],
     },
     bullets: {
       ru: [
-        "Сценарий вокруг реальной механики, не постановка",
+        "Сценарий вокруг реальной механики, визуал — через AI",
         "Адаптации под Google Ads UA, Meta Ads, Unity Ads",
         "Форматы 15–30 секунд под разные плейсменты",
         "Синхронизация с ASO-роликом на сторе",
       ],
       en: [
-        "Script built around a real mechanic, not a staged scene",
+        "Script built around a real mechanic, visuals built with AI",
         "Adaptations for Google Ads UA, Meta Ads, Unity Ads",
         "15–30 second formats for different placements",
         "Synced with the store's ASO video",
@@ -132,8 +132,8 @@ export const seoPages: SeoPage[] = [
           en: "Do you reuse CGI scenes from a trailer for UA creatives?",
         },
         a: {
-          ru: "Да, это частая связка — переиспользуем рендеры из трейлера в UA-нарезке, это быстрее и дешевле нового продакшна.",
-          en: "Yes, it's a common combination — reusing trailer renders in a UA cutdown is faster and cheaper than a new production.",
+          ru: "Да, это частая связка — переиспользуем AI-рендеры из трейлера в UA-нарезке, это быстрее и дешевле нового продакшна.",
+          en: "Yes, it's a common combination — reusing AI renders from the trailer in a UA cutdown is faster and cheaper than a new production.",
         },
       },
     ],
@@ -154,11 +154,11 @@ export const seoPages: SeoPage[] = [
     intro: {
       ru: [
         "Собираем креативы под TikTok в логике самой площадки: вертикаль 9:16, монтаж под ритм ленты, хук в первые 1,5 секунды, часто — с UGC-имитацией или CGI-геймплеем, который не читается как классическая реклама.",
-        "Тестируем 5–8 хуков за один спринт и по CTR/IPM burst-теста докручиваем связку — так экономим бюджет на масштабирование, вместо того чтобы гадать, какой формат зайдёт.",
+        "Генерируем через AI и тестируем 15–20 хуков за один спринт, по CTR/IPM burst-теста докручиваем связку — так экономим бюджет на масштабирование, вместо того чтобы гадать, какой формат зайдёт.",
       ],
       en: [
         "We build TikTok creatives in the platform's own logic: 9:16 vertical, editing paced to the feed, a hook in the first 1.5 seconds, often with UGC-style ads or CGI gameplay that doesn't read as a classic ad.",
-        "We test 5–8 hooks in a single sprint and refine the combination by burst-test CTR/IPM — that saves scaling budget instead of guessing which format will land.",
+        "We generate with AI and test 15–20 hooks in a single sprint, refining the combination by burst-test CTR/IPM — that saves scaling budget instead of guessing which format will land.",
       ],
     },
     bullets: {
@@ -192,8 +192,8 @@ export const seoPages: SeoPage[] = [
           en: "Do you shoot UGC-style ads with real actors?",
         },
         a: {
-          ru: "Да, привлекаем UGC-креаторов под ваш профиль аудитории либо снимаем силами студии — зависит от бюджета и сроков.",
-          en: "Yes, we bring in UGC creators matched to your audience profile, or shoot in-house — it depends on budget and timeline.",
+          ru: "В основном генерируем через AI под ваш профиль аудитории — быстрее и дешевле съёмки с блогерами. Классическую съёмку с реальными UGC-креаторами тоже можем обсудить отдельно, если хуку нужно именно живое лицо.",
+          en: "Mostly we generate them with AI, matched to your audience profile — faster and cheaper than shooting with creators. Real UGC creators or an in-house shoot are still on the table if a hook specifically needs a live face.",
         },
       },
     ],
@@ -213,11 +213,11 @@ export const seoPages: SeoPage[] = [
     },
     intro: {
       ru: [
-        "Meta Ads размещает один креатив в десятке форматов одновременно, и то, что работает в ленте, часто проваливается в Stories из-за другого ритма просмотра. Мы сразу собираем набор адаптаций, а не один ролик под всё.",
+        "Meta Ads размещает один креатив в десятке форматов одновременно, и то, что работает в ленте, часто проваливается в Stories из-за другого ритма просмотра. Мы сразу собираем через AI набор адаптаций, а не один ролик под всё.",
         "Тестируем гипотезы хуков через Advantage+ и ручные кампании, смотрим на CTR и IPM по каждому плейсменту отдельно и докручиваем то, что держит CPI, вместо того чтобы усреднять результат по всем форматам сразу.",
       ],
       en: [
-        "Meta Ads runs one creative across a dozen formats at once, and what works in the feed often falls flat in Stories because the viewing rhythm is different. We build a set of adaptations from the start, not one video for everything.",
+        "Meta Ads runs one creative across a dozen formats at once, and what works in the feed often falls flat in Stories because the viewing rhythm is different. We build a set of AI-generated adaptations from the start, not one video for everything.",
         "We test hook hypotheses through Advantage+ and manual campaigns, watch CTR and IPM per placement separately, and double down on whatever holds CPI instead of averaging results across all formats.",
       ],
     },
@@ -271,23 +271,23 @@ export const seoPages: SeoPage[] = [
     intro: {
       ru: [
         "Строим трейлер как маленькую историю: завязка, нарастание, кульминация — а не нарезку геймплея под музыку. Такой ролик работает и на сторе, и как якорный контент для анонса, ивента или обновления.",
-        "Комбинируем реальный геймплей, CGI-вставки и 3D-рендеры там, где движок в реальном времени не даёт нужной картинки — например, для крупных планов персонажей или экшн-сцен, которые сложно поймать на записи.",
+        "Комбинируем реальный геймплей с AI-генерацией и 3D-рендерами там, где движок в реальном времени не даёт нужной картинки — например, для крупных планов персонажей или экшн-сцен, которые сложно поймать на записи. AI-продакшн быстрее и дешевле классического CGI-конвейера.",
       ],
       en: [
         "We build the trailer as a short story — setup, rise, payoff — not a gameplay cutdown set to music. That kind of video works both on the store and as anchor content for an announcement, event or update.",
-        "We combine real gameplay with CGI inserts and 3D renders wherever a real-time engine can't deliver the shot — character close-ups, or action beats that are hard to capture on a recording.",
+        "We combine real gameplay with AI generation and 3D renders wherever a real-time engine can't deliver the shot — character close-ups, or action beats that are hard to capture on a recording. AI production is faster and cheaper than a classic CGI pipeline.",
       ],
     },
     bullets: {
       ru: [
         "Трёхактная структура, не нарезка под музыку",
-        "CGI и 3D-рендеры для крупных планов",
+        "AI-генерация и 3D-рендеры для крупных планов",
         "Синхронизация с датой анонса или обновления",
         "Адаптация под превью App Store / Google Play",
       ],
       en: [
         "Three-act structure, not a cutdown set to music",
-        "CGI and 3D renders for close-ups",
+        "AI generation and 3D renders for close-ups",
         "Synced with the announcement or update date",
         "Adapted for the App Store / Google Play preview",
       ],
@@ -324,11 +324,11 @@ export const seoPages: SeoPage[] = [
     },
     intro: {
       ru: [
-        "App Store и Google Play показывают превью-ролик до полного скачивания — это последняя точка перед установкой, где ещё можно поднять конверсию. Строим ролик под конкретные требования площадки: разрешение, длительность, автозапуск без звука.",
+        "App Store и Google Play показывают превью-ролик до полного скачивания — это последняя точка перед установкой, где ещё можно поднять конверсию. Собираем визуал через AI и строим ролик под конкретные требования площадки: разрешение, длительность, автозапуск без звука.",
         "Начинаем с кадра, который цепляет в mute-режиме — большинство просматривает превью без звука, — и показываем ключевую механику в первые секунды, а не логотип студии или долгий брендинг.",
       ],
       en: [
-        "The App Store and Google Play play a preview video before the full download — it's the last point where conversion can still move. We build the video around the platform's exact requirements: resolution, length, autoplay without sound.",
+        "The App Store and Google Play play a preview video before the full download — it's the last point where conversion can still move. We build the visuals with AI and cut the video to the platform's exact requirements: resolution, length, autoplay without sound.",
         "We open with a frame that lands muted — most people watch previews with sound off — and show the core mechanic in the first seconds instead of a studio logo or a long brand intro.",
       ],
     },
@@ -376,31 +376,31 @@ export const seoPages: SeoPage[] = [
     eyebrow: { ru: "UA-видео · UGC", en: "UA video · UGC" },
     h1: { ru: "UGC-имитация для paid-креативов", en: "UGC-style ads for paid creatives" },
     lead: {
-      ru: "UGC-формат работает потому, что не выглядит рекламой — но снять убедительную имитацию сложнее, чем кажется.",
-      en: "UGC works because it doesn't look like an ad — but a convincing imitation is harder to shoot than it looks.",
+      ru: "UGC-формат работает потому, что не выглядит рекламой — но собрать убедительную имитацию сложнее, чем кажется.",
+      en: "UGC works because it doesn't look like an ad — but a convincing imitation is harder to pull off than it looks.",
     },
     intro: {
       ru: [
-        "Настоящий UGC долго и дорого собирать под каждую гипотезу, поэтому чаще студии продюсируют UGC-имитацию: те же ракурсы, темп речи и монтаж, что в органическом контенте, но управляемо и быстро — под конкретный хук и аудиторию.",
-        "Работаем двумя способами: привлекаем реальных UGC-креаторов под профиль вашей аудитории или снимаем силами студии с актёрами и постановкой под формат — выбор зависит от бюджета, сроков и того, насколько нишевая аудитория.",
+        "Настоящий UGC долго и дорого собирать под каждую гипотезу, поэтому мы генерируем UGC-имитацию через AI: те же ракурсы, темп речи и монтаж, что в органическом контенте, но управляемо, быстро и без съёмочного дня — под конкретный хук и аудиторию.",
+        "В основном работаем через AI-генерацию под профиль вашей аудитории — это дешевле и быстрее классической съёмки. Реальных UGC-креаторов или продакшн силами студии подключаем отдельно, если конкретному хуку нужно именно живое лицо.",
       ],
       en: [
-        "Real UGC is slow and expensive to collect for every hypothesis, so studios usually produce UGC-style ads instead: the same camera angles, speech pace and editing as organic content, but controllable and fast — built for a specific hook and audience.",
-        "We work two ways: bringing in real UGC creators matched to your audience profile, or shooting in-house with actors and staging built for the format — the choice depends on budget, timeline and how niche the audience is.",
+        "Real UGC is slow and expensive to collect for every hypothesis, so we generate UGC-style ads with AI instead: the same camera angles, speech pace and editing as organic content, but controllable, fast, and without a shoot day — built for a specific hook and audience.",
+        "Mostly we work through AI generation matched to your audience profile — cheaper and faster than a classic shoot. Real UGC creators or an in-house production are still on the table if a specific hook needs a live face.",
       ],
     },
     bullets: {
       ru: [
-        "Реальные UGC-креаторы или продакшн силами студии",
+        "AI-генерация под профиль вашей аудитории",
         "Ракурсы и темп речи как в органическом контенте",
         "Под конкретную гипотезу хука, не общий бренд-ролик",
-        "Быстрый цикл — от брифа до готового ролика за несколько дней",
+        "Быстрый цикл — от брифа до готового ролика за 1–2 дня",
       ],
       en: [
-        "Real UGC creators or in-house production",
+        "AI generation matched to your audience profile",
         "Camera angles and pacing matched to organic content",
         "Built for a specific hook hypothesis, not a generic brand video",
-        "Fast turnaround — from brief to finished video in a few days",
+        "Fast turnaround — from brief to finished video in 1–2 days",
       ],
     },
     faq: [
@@ -410,8 +410,8 @@ export const seoPages: SeoPage[] = [
           en: "How is a UGC-style ad different from real UGC?",
         },
         a: {
-          ru: "Управляемостью и скоростью — тот же стиль и доверие, но без непредсказуемости съёмок с блогерами и с чётким дедлайном.",
-          en: "Control and speed — the same style and trust signals, but without the unpredictability of shooting with creators and with a firm deadline.",
+          ru: "Управляемостью и скоростью: генерируем через AI, поэтому нет зависимости от графика блогеров и непредсказуемости съёмок, а стиль и доверие органического контента сохраняются.",
+          en: "Control and speed: we generate it with AI, so there's no dependency on a creator's schedule or the unpredictability of a shoot, while the style and trust signals of organic content stay intact.",
         },
       },
       {
@@ -441,23 +441,23 @@ export const seoPages: SeoPage[] = [
     },
     intro: {
       ru: [
-        "Не заменяем 3D-анимацией весь ролик — комбинируем с реальным геймплеем там, где рендер действительно решает задачу: катсцена, кульминационный экшн-момент, лут-момент крупным планом. Это дешевле и честнее по срокам, чем рендерить весь ролик с нуля.",
-        "Работаем с катсценами, рендерами персонажей и окружений, экшн-анимацией под трейлеры и обновления. Материалы из одного 3D-продакшна переиспользуем и в трейлере, и в нарезке UA-хуков, и в анонсах для соцсетей.",
+        "Не заменяем AI-анимацией весь ролик — комбинируем с реальным геймплеем там, где рендер действительно решает задачу: катсцена, кульминационный экшн-момент, лут-момент крупным планом. Генерируем через AI вместо ручного 3D-конвейера — это на порядок дешевле и быстрее студийного рендера.",
+        "Работаем с катсценами, рендерами персонажей и окружений, экшн-анимацией под трейлеры и обновления. Материалы из одной AI-генерации переиспользуем и в трейлере, и в нарезке UA-хуков, и в анонсах для соцсетей.",
       ],
       en: [
-        "We don't replace the whole video with 3D — we combine it with real gameplay wherever a render actually earns its place: a cutscene, an action payoff, a close-up loot moment. That's cheaper and more honest on timeline than rendering the whole video from scratch.",
-        "We work with cutscenes, character and environment renders, and action animation for trailers and updates. Assets from one 3D production get reused in the trailer, in UA hook cutdowns, and in social announcements.",
+        "We don't replace the whole video with AI animation — we combine it with real gameplay wherever a render actually earns its place: a cutscene, an action payoff, a close-up loot moment. We generate it with AI instead of a manual 3D pipeline — an order of magnitude cheaper and faster than a studio render.",
+        "We work with cutscenes, character and environment renders, and action animation for trailers and updates. Assets from one AI generation pass get reused in the trailer, in UA hook cutdowns, and in social announcements.",
       ],
     },
     bullets: {
       ru: [
-        "Катсцены и рендеры персонажей",
+        "AI-катсцены и рендеры персонажей",
         "Экшн-сцены для кульминации трейлера",
         "Совместимо с реальным геймплеем в одном монтаже",
         "Ассеты переиспользуются между трейлером, UA и соцсетями",
       ],
       en: [
-        "Cutscenes and character renders",
+        "AI cutscenes and character renders",
         "Action scenes for a trailer's payoff",
         "Cuts together with real gameplay in one edit",
         "Assets reused across trailer, UA and social",
@@ -467,8 +467,8 @@ export const seoPages: SeoPage[] = [
       {
         q: { ru: "Сколько занимает 3D-продакшн?", en: "How long does 3D production take?" },
         a: {
-          ru: "От 2 до 4 недель в зависимости от количества сцен и сложности рендеров — сроки фиксируем после раскадровки.",
-          en: "Two to four weeks depending on scene count and render complexity — we lock the timeline after the storyboard.",
+          ru: "От нескольких дней до двух недель в зависимости от количества сцен и сложности рендеров — AI-генерация заметно быстрее классического 3D-конвейера, точные сроки фиксируем после раскадровки.",
+          en: "From a few days to two weeks depending on scene count and render complexity — AI generation is noticeably faster than a classic 3D pipeline; we lock the exact timeline after the storyboard.",
         },
       },
       {
@@ -477,8 +477,8 @@ export const seoPages: SeoPage[] = [
           en: "Do we need our own 3D character models?",
         },
         a: {
-          ru: "Желательно иметь исходные модели или референсы из движка — так рендер точнее совпадает с игрой. Если моделей нет, можем обсудить продакшн с нуля отдельно.",
-          en: "It helps to have source models or engine references so the render matches the game closely. If there are none, we can scope building them from scratch separately.",
+          ru: "Не обязательно — AI может сгенерировать по референсам, артам или скриншотам из игры. Свои модели или рендеры из движка ускоряют процесс, но не строго необходимы.",
+          en: "Not necessarily — AI can generate from references, art or in-game screenshots. Your own models or engine renders speed things up, but aren't strictly required.",
         },
       },
     ],

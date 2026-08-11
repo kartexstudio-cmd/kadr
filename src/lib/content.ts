@@ -67,7 +67,7 @@ export const works: WorkItem[] = [
     id: "work-05",
     client: "BlockRush",
     title: { ru: "UGC-имитация для paid-кампании", en: "UGC-style ads for a paid campaign" },
-    tag: { ru: "UGC / Перформанс", en: "UGC / Performance" },
+    tag: { ru: "AI UGC / Перформанс", en: "AI UGC / Performance" },
     metric: { ru: "−28% к цене инсталла", en: "−28% cost per install" },
     duration: "0:27",
     video: local("work-05"),
@@ -92,7 +92,7 @@ export const reels: ReelItem[] = [
   },
   {
     id: "reel-02",
-    title: { ru: "CGI-геймплей демо", en: "CGI gameplay demo" },
+    title: { ru: "AI-геймплей демо", en: "AI gameplay demo" },
     platform: "TikTok",
     video: local("reel-02"),
   },
