@@ -7,6 +7,7 @@ import { ChatWidget } from "@/components/site/chat-widget";
 import { ComparisonChart } from "@/components/site/comparison-chart";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
+import { ServiceIcon } from "@/components/ui/service-icons";
 import { LightboxProvider } from "@/components/video/lightbox";
 import { WorkGrid } from "@/components/video/work-grid";
 import { ReelCard } from "@/components/video/reel-card";
@@ -64,9 +65,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
       <main id="main">
         <Hero t={t.hero} scrollHint={t.a11y.scrollHint} />
-
-        {/* Клиенты */}
-        <ClientsMarquee items={works.map((item) => item.client)} label={t.clients.label} />
 
         {/* Форматы и жанры */}
         <ClientsMarquee items={genres} label={t.genres.label} />
@@ -139,12 +137,15 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             <p className="mt-4 text-sm text-accent">{t.services.batchDetails.note}</p>
           </details>
 
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="grid gap-5 md:grid-cols-3">
             {t.services.items.map((service, index) => (
-              <Reveal key={service.title} delay={(index % 2) * 0.08}>
+              <Reveal key={service.title} delay={index * 0.08}>
                 <article className="card group h-full p-7 transition-colors hover:border-accent/40 md:p-9">
-                  <span className="font-mono text-sm text-accent">
-                    {String(index + 1).padStart(2, "0")}
+                  <span
+                    aria-hidden="true"
+                    className="grid h-11 w-11 place-items-center rounded-full border border-accent/30 bg-accent/10 text-accent"
+                  >
+                    <ServiceIcon index={index} className="h-5 w-5" />
                   </span>
                   <h3 className="mt-5 font-display text-2xl font-bold">{service.title}</h3>
                   <p className="mt-3 text-muted">{service.text}</p>

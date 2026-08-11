@@ -44,16 +44,13 @@ const ru = {
   genres: {
     label: "Форматы и жанры",
   },
-  clients: {
-    label: "Нам доверяют команды из",
-  },
   services: {
     eyebrow: "Услуги",
-    title: "Четыре направления, одна команда",
+    title: "Три направления, одна команда",
     subtitle:
       "Не передаём проект между подрядчиками: сценарий, продакшн, графика и адаптации под сети живут внутри одной студии.",
     priceLine:
-      "Батч из 10 UA-креативов (15–30 сек + хук-нарезки 6–9 сек) — от 180 000 ₽. Store-трейлер до 30 сек — от 250 000 ₽, cinematic-трейлер 45–60 сек — от 400 000 ₽. Точная смета — после брифа.",
+      "Батч из 10 UA-креативов (15–30 сек + хук-нарезки 6–9 сек) — от 180 000 ₽. Store-трейлер до 30 сек — от 250 000 ₽, cinematic-трейлер 45–60 сек — от 400 000 ₽. Анимация и CGI (2D/3D, 15–20 сек) — от 27 000 ₽ за ролик, пакет из 3 — от 65 000 ₽. Точная смета — после брифа.",
     batchDetails: {
       title: "Что входит в батч за 180 000 ₽",
       items: [
@@ -77,14 +74,9 @@ const ru = {
         points: ["Store-трейлеры", "Тизеры к ивентам", "AI-cinematic"],
       },
       {
-        title: "3D-анимация и CGI",
-        text: "Катсцены, рендеры персонажей и окружений, экшн-сцены для трейлеров. Генерируем через AI вместо ручного 3D-конвейера — быстрее и на порядок дешевле студийного рендера.",
-        points: ["Катсцены", "AI-рендеры персонажей", "Экшн-анимация"],
-      },
-      {
-        title: "2D-анимация и моушн",
-        text: "UI-моушн, анимация иконок, ролики к обновлениям и ивентам, обучающая анимация для онбординга — тоже через AI-инструменты, это ускоряет цикл правок.",
-        points: ["UI-моушн", "Анимация иконок", "Онбординг-анимация"],
+        title: "Анимация и CGI",
+        text: "Катсцены, рендеры персонажей и окружений, экшн-сцены для трейлеров, UI-моушн, анимация иконок, онбординг-анимация. 2D или 3D — с AI разницы в сложности почти нет, поэтому не продаём это как разные услуги: формат подбираем под задачу.",
+        points: ["AI-катсцены и рендеры", "UI-моушн и иконки", "2D и 3D в одном пайплайне"],
       },
     ],
   },
@@ -196,7 +188,7 @@ const ru = {
     items: [
       {
         q: "Сколько стоит проект?",
-        a: "Батч из 10 UA-креативов (15–30 сек, плюс хук-нарезки 6–9 сек для сплит-теста) — от 180 000 ₽. Store-трейлер до 30 секунд — от 250 000 ₽, cinematic-трейлер 45–60 секунд — от 400 000 ₽. AI-продакшн визуала дешевле классической съёмки — это и держит цену ниже рынка. Точную смету присылаем в течение суток после брифа.",
+        a: "Батч из 10 UA-креативов (15–30 сек, плюс хук-нарезки 6–9 сек для сплит-теста) — от 180 000 ₽. Store-трейлер до 30 секунд — от 250 000 ₽, cinematic-трейлер 45–60 секунд — от 400 000 ₽. Анимация и CGI (2D или 3D, 15–20 сек) — от 27 000 ₽ за ролик, пакет из 3 — от 65 000 ₽. AI-продакшн визуала дешевле классической съёмки — это и держит цену ниже рынка. Точную смету присылаем в течение суток после брифа.",
       },
       {
         q: "Какие сроки?",
@@ -338,16 +330,13 @@ const en: Dictionary = {
   genres: {
     label: "Formats & genres",
   },
-  clients: {
-    label: "Trusted by teams at",
-  },
   services: {
     eyebrow: "Services",
-    title: "Four disciplines, one team",
+    title: "Three disciplines, one team",
     subtitle:
       "Nothing gets handed between vendors: script, production, graphics and network adaptations all live inside one studio.",
     priceLine:
-      "A batch of 10 UA creatives (15–30 sec + 6–9 sec hook cutdowns) — from €1,800. A store trailer up to 30 sec — from €2,500, a 45–60 sec cinematic trailer — from €4,000. Exact quote after the brief.",
+      "A batch of 10 UA creatives (15–30 sec + 6–9 sec hook cutdowns) — from €1,800. A store trailer up to 30 sec — from €2,500, a 45–60 sec cinematic trailer — from €4,000. Animation & CGI (2D/3D, 15–20 sec) — from €270 per video, a pack of 3 — from €650. Exact quote after the brief.",
     batchDetails: {
       title: "What's included in a €1,800 batch",
       items: [
@@ -371,14 +360,9 @@ const en: Dictionary = {
         points: ["Store trailers", "Event teasers", "AI cinematic"],
       },
       {
-        title: "3D animation & CGI",
-        text: "Cutscenes, character and environment renders, action sequences for trailers. Generated with AI instead of a manual 3D pipeline — faster and an order of magnitude cheaper than a studio render.",
-        points: ["Cutscenes", "AI character renders", "Action animation"],
-      },
-      {
-        title: "2D animation & motion",
-        text: "UI motion, icon animation, update and event videos, onboarding motion that explains the game — also built with AI tools, which speeds up the revision cycle.",
-        points: ["UI motion", "Icon animation", "Onboarding motion"],
+        title: "Animation & CGI",
+        text: "Cutscenes, character and environment renders, action sequences for trailers, UI motion, icon animation, onboarding animation. 2D or 3D — with AI there's barely a complexity gap, so we don't sell it as separate services: we pick the format for the task.",
+        points: ["AI cutscenes & renders", "UI motion & icons", "2D and 3D in one pipeline"],
       },
     ],
   },
@@ -490,7 +474,7 @@ const en: Dictionary = {
     items: [
       {
         q: "How much does a project cost?",
-        a: "A batch of ten UA creatives (15–30 sec, plus 6–9 sec hook cutdowns for split testing) starts at €1,800. A store trailer up to 30 seconds starts at €2,500, a 45–60 second cinematic trailer starts at €4,000. AI visual production is cheaper than a classic shoot — that's what keeps the price below the market rate. You get an exact quote within a day of the brief.",
+        a: "A batch of ten UA creatives (15–30 sec, plus 6–9 sec hook cutdowns for split testing) starts at €1,800. A store trailer up to 30 seconds starts at €2,500, a 45–60 second cinematic trailer starts at €4,000. Animation & CGI (2D or 3D, 15–20 sec) starts at €270 per video, a pack of 3 starts at €650. AI visual production is cheaper than a classic shoot — that's what keeps the price below the market rate. You get an exact quote within a day of the brief.",
       },
       {
         q: "What are the timelines?",
