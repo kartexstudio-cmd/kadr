@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { locales, localeNames, type Locale } from "@/lib/i18n/config";
@@ -54,13 +55,15 @@ export function Header({
       }`}
     >
       <div className="shell flex h-16 items-center justify-between gap-6 md:h-20">
-        <Link
-          href={`/${lang}`}
-          className="font-display text-lg font-extrabold tracking-[-0.05em]"
-          onClick={() => setMenuOpen(false)}
-        >
-          {site.brand}
-          <span className="text-accent">.</span>
+        <Link href={`/${lang}`} onClick={() => setMenuOpen(false)} aria-label={site.brand}>
+          <Image
+            src="/brand/nitroreel-logo.png"
+            alt={site.brand}
+            width={300}
+            height={100}
+            priority
+            className="h-7 w-auto md:h-8"
+          />
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-8 lg:flex">

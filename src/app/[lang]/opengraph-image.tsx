@@ -1,7 +1,17 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { defaultLocale, isLocale, locales } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { site } from "@/lib/site";
+
+// Читаем один раз при старте модуля (значение не зависит от запроса) — та же логика,
+// что для шрифтов в примере Next.js. Локально в Windows-деве `next/og` падает на
+// растровых <img> с ошибкой резвг "Input buffer contains unsupported image format" —
+// баг конкретно этого окружения (Turbopack + resvg на Windows), на проде (Vercel/Linux)
+// работает. Проверяй эту страницу после деплоя, не через локальный dev-сервер.
+const logoBuffer = await readFile(join(process.cwd(), "public/brand/nitroreel-logo-og.png"));
+const logoSrc = new Uint8Array(logoBuffer).buffer;
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -30,16 +40,14 @@ export default async function Image({ params }: { params: Promise<{ lang: string
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 14, fontSize: 34, fontWeight: 800 }}>
-          {site.brand}
-          <span style={{ color: "#d6ff4b" }}>.</span>
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element -- next/og рендерит через satori, свой <img> обязателен */}
+        <img src={logoSrc as unknown as string} alt={site.brand} width={220} height={74} />
 
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
           <div style={{ fontSize: 62, fontWeight: 800, lineHeight: 1.05, letterSpacing: -2 }}>
             {lang === "ru"
-              ? "Видео, 3D и 2D-анимация для брендов"
-              : "Video, 3D and 2D animation for brands"}
+              ? "Видеокреативы для мобильных игр"
+              : "Video creatives for mobile games"}
           </div>
           <div style={{ fontSize: 28, color: "#8b8f9c", maxWidth: 900 }}>{t.meta.description}</div>
         </div>

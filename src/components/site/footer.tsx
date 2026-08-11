@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
@@ -23,9 +24,14 @@ export function Footer({
       <div className="shell py-16">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <Link href={`/${lang}`} className="font-display text-2xl font-extrabold tracking-[-0.05em]">
-              {site.brand}
-              <span className="text-accent">.</span>
+            <Link href={`/${lang}`} aria-label={site.brand}>
+              <Image
+                src="/brand/nitroreel-logo.png"
+                alt={site.brand}
+                width={300}
+                height={100}
+                className="h-9 w-auto"
+              />
             </Link>
             <p className="mt-4 max-w-xs text-sm text-muted">{t.tagline}</p>
           </div>

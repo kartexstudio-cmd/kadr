@@ -182,11 +182,34 @@ Tailwind v4, **конфига `tailwind.config` нет** — токены объ
   (`useVelocity` → `useTransform`). Множитель должен оставаться **знаковым**: `Math.abs`
   ломает разворот при скролле вверх.
 
+### Бренд-ассеты
+
+Реальный логотип (не сгенерированный) лежит в `public/brand/`:
+`nitroreel-logo.png` — полный вордмарк NITROREEL с зелёным газовым баллоном вместо
+буквы O, используется в хедере и футере через `next/image`. У него **не полностью
+прозрачный фон** — вокруг букв зернистая полупрозрачная тёмная подложка (авторский
+приём, не баг), на `bg-ink` сайта сливается почти незаметно, но на светлом фоне будет
+смотреться грязно — не ставь этот файл на светлую секцию без проверки. Квадратная
+иконка баллона — `src/app/icon.png` (конвенция Next.js, генерирует favicon сам,
+`favicon.ico` больше нет — удалён как дефолтный неиспользуемый). Оба файла обрезаны и
+пересжаты через `sharp` из оригинала в `C:\Cloude\nitroreel_branding\` — если нужно
+переделать вырезку/размер, ищи оригинал там, не в `public/`.
+
 ### SEO
 
 `src/app/[lang]/opengraph-image.tsx` (генерируется рантаймом), `sitemap.ts`, `robots.ts`,
 JSON-LD `ProfessionalService` прямо в `page.tsx`. Базовый URL — `NEXT_PUBLIC_SITE_URL`,
 фолбэк `https://nitroreel.net` в `src/lib/site.ts`.
+
+**Известный баг окружения, не трогай ради него код:** `opengraph-image.tsx` вставляет
+логотип через `<img src={Uint8Array...}>` (официальный паттерн Next.js для локальных
+файлов в `ImageResponse`). Локально в `npm run dev` (Turbopack, Windows) это падает с
+`Error: Input buffer contains unsupported image format` — баг resvg/Turbopack именно в
+этой связке на этой ОС, воспроизводится даже без единой картинки, на чистом
+текстовом JSX. **`npm run build` и прод на Vercel работают нормально** — проверено
+статикой в `.next/server/app/{ru,en}/opengraph-image.body` и на реальном
+`nitroreel.net/ru/opengraph-image` (200, картинка с логотипом). Если снова увидишь эту
+ошибку в dev — не чини, просто проверяй через `npm run build` или прямо на проде.
 
 **Программные SEO-страницы** — `src/lib/seo-pages.ts` (появились в репозитории вне этой
 сессии, документирую задним числом) → `src/app/[lang]/services/[slug]/page.tsx`.
