@@ -27,9 +27,9 @@ const ru = {
   },
   hero: {
     eyebrow: "Видеокреативы для мобильных игр",
-    titleLead: "Креативы, которые",
-    titleAccent: "снижают",
-    titleTail: "CPI",
+    titleLead: "В разы больше",
+    titleAccent: "хуков",
+    titleTail: "за тот же бюджет",
     subtitle:
       "UA-креативы, трейлеры и cinematic-ролики для мобильных игр. Визуал собираем через AI-продакшн — это дешевле и быстрее классической съёмки, а хуков можно тестировать в разы больше на тот же бюджет.",
     primary: "Обсудить проект",
@@ -115,6 +115,36 @@ const ru = {
       { value: "38%", label: "среднее снижение CPI" },
       { value: "3,4×", label: "медианный ROAS" },
       { value: "94%", label: "клиентов возвращаются" },
+    ],
+  },
+  comparison: {
+    eyebrow: "AI против классики",
+    title: "Почему AI дешевле и быстрее",
+    subtitle: "Тот же бюджет и то же время — но батч в разы больше, а тест быстрее.",
+    classicLabel: "Классический продакшн",
+    aiLabel: "AI-продакшн",
+    items: [
+      {
+        metric: "Стоимость батча (10 хуков)",
+        classicValue: "от 400 000 ₽",
+        classicWidth: 100,
+        aiValue: "от 120 000 ₽",
+        aiWidth: 30,
+      },
+      {
+        metric: "Срок",
+        classicValue: "2–3 недели",
+        classicWidth: 100,
+        aiValue: "3–5 дней",
+        aiWidth: 20,
+      },
+      {
+        metric: "Хуков в батче",
+        classicValue: "8–10",
+        classicWidth: 40,
+        aiValue: "20+",
+        aiWidth: 100,
+      },
     ],
   },
   testimonials: {
@@ -268,9 +298,9 @@ const en: Dictionary = {
   },
   hero: {
     eyebrow: "Video creatives for mobile games",
-    titleLead: "Creatives that",
-    titleAccent: "lower",
-    titleTail: "CPI",
+    titleLead: "Far more",
+    titleAccent: "hooks",
+    titleTail: "on the same budget",
     subtitle:
       "UA creatives, trailers and cinematic videos for mobile games. We build the visuals with AI production — cheaper and faster than a classic shoot, so we can test far more hooks on the same budget.",
     primary: "Start a project",
@@ -356,6 +386,36 @@ const en: Dictionary = {
       { value: "38%", label: "average CPI reduction" },
       { value: "3.4×", label: "median ROAS" },
       { value: "94%", label: "clients come back" },
+    ],
+  },
+  comparison: {
+    eyebrow: "AI vs classic",
+    title: "Why AI is cheaper and faster",
+    subtitle: "Same budget, same time — but the batch is far bigger and the test is faster.",
+    classicLabel: "Classic production",
+    aiLabel: "AI production",
+    items: [
+      {
+        metric: "Batch cost (10 hooks)",
+        classicValue: "from €4,000",
+        classicWidth: 100,
+        aiValue: "from €1,200",
+        aiWidth: 30,
+      },
+      {
+        metric: "Timeline",
+        classicValue: "2–3 weeks",
+        classicWidth: 100,
+        aiValue: "3–5 days",
+        aiWidth: 20,
+      },
+      {
+        metric: "Hooks per batch",
+        classicValue: "8–10",
+        classicWidth: 40,
+        aiValue: "20+",
+        aiWidth: 100,
+      },
     ],
   },
   testimonials: {

@@ -4,6 +4,7 @@ import { Hero } from "@/components/site/hero";
 import { ContactForm } from "@/components/site/contact-form";
 import { ClientsMarquee } from "@/components/site/clients-marquee";
 import { ChatWidget } from "@/components/site/chat-widget";
+import { ComparisonChart } from "@/components/site/comparison-chart";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { LightboxProvider } from "@/components/video/lightbox";
@@ -193,6 +194,16 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
               </Reveal>
             ))}
           </dl>
+        </Section>
+
+        {/* AI против классики */}
+        <Section
+          eyebrow={t.comparison.eyebrow}
+          title={t.comparison.title}
+          subtitle={t.comparison.subtitle}
+          className="bg-ink-soft"
+        >
+          <ComparisonChart t={t.comparison} />
         </Section>
 
         {/* Отзывы */}
