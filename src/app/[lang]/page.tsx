@@ -112,9 +112,32 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           title={t.services.title}
           subtitle={t.services.subtitle}
         >
-          <p className="-mt-6 mb-10 max-w-2xl text-sm text-muted">
+          <p className="-mt-6 mb-4 max-w-2xl text-sm text-muted">
             <span className="font-semibold text-fg">{t.services.priceLine}</span>
           </p>
+
+          <details className="group mb-10 max-w-2xl rounded-card border border-line p-5">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-base font-bold [&::-webkit-details-marker]:hidden">
+              {t.services.batchDetails.title}
+              <span
+                aria-hidden="true"
+                className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-line transition-transform duration-300 group-open:rotate-45"
+              >
+                <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" stroke="currentColor" strokeWidth="2">
+                  <path d="M12 5v14M5 12h14" strokeLinecap="round" />
+                </svg>
+              </span>
+            </summary>
+            <ul className="mt-4 space-y-2 text-sm text-muted">
+              {t.services.batchDetails.items.map((item) => (
+                <li key={item} className="flex gap-2.5">
+                  <span aria-hidden="true" className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-sm text-accent">{t.services.batchDetails.note}</p>
+          </details>
 
           <div className="grid gap-5 md:grid-cols-2">
             {t.services.items.map((service, index) => (

@@ -54,6 +54,16 @@ const ru = {
       "Не передаём проект между подрядчиками: сценарий, продакшн, графика и адаптации под сети живут внутри одной студии.",
     priceLine:
       "Батч из 10 UA-креативов (15–30 сек + хук-нарезки 6–9 сек) — от 180 000 ₽. Store-трейлер до 30 сек — от 250 000 ₽, cinematic-трейлер 45–60 сек — от 400 000 ₽. Точная смета — после брифа.",
+    batchDetails: {
+      title: "Что входит в батч за 180 000 ₽",
+      items: [
+        "10 полноценных роликов — 15–30 сек, вертикаль 9:16, каждый под свою гипотезу хука",
+        "10 хук-нарезок — короткие версии 6–9 сек тех же роликов, для отдельного теста",
+        "10 ресайзов в квадрат 1:1 — под ленту Meta",
+        "Итого 30 готовых файлов, с двумя кругами правок на сценарии и монтаже",
+      ],
+      note: "Отдельно рассматриваем альтернативные хуки — разные первые секунды поверх одного тела ролика.",
+    },
     moreLabel: "Подробнее по задачам",
     items: [
       {
@@ -338,6 +348,16 @@ const en: Dictionary = {
       "Nothing gets handed between vendors: script, production, graphics and network adaptations all live inside one studio.",
     priceLine:
       "A batch of 10 UA creatives (15–30 sec + 6–9 sec hook cutdowns) — from €1,800. A store trailer up to 30 sec — from €2,500, a 45–60 sec cinematic trailer — from €4,000. Exact quote after the brief.",
+    batchDetails: {
+      title: "What's included in a €1,800 batch",
+      items: [
+        "10 full creatives — 15–30 sec, vertical 9:16, each testing its own hook hypothesis",
+        "10 hook cutdowns — short 6–9 sec versions of the same videos, for separate testing",
+        "10 square resizes (1:1) — for the Meta feed",
+        "30 finished files in total, with two rounds of revisions at script and edit stage",
+      ],
+      note: "We also look at alternative hooks separately — different opening seconds on the same video body.",
+    },
     moreLabel: "More by use case",
     items: [
       {
