@@ -37,7 +37,7 @@ export const works: WorkItem[] = [
     title: { ru: "UA-кампания для гиперкэжуал-хита", en: "UA campaign for a hyper-casual hit" },
     tag: { ru: "UA / Перформанс", en: "UA / Performance" },
     metric: { ru: "CPI ниже плана на 34%", en: "CPI 34% below target" },
-    duration: "0:32",
+    duration: "0:10",
     video: local("work-01"),
   },
   {
@@ -47,7 +47,7 @@ export const works: WorkItem[] = [
     title: { ru: "Cinematic-трейлер к обновлению", en: "Cinematic trailer for a major update" },
     tag: { ru: "Трейлер / Cinematic", en: "Trailer / Cinematic" },
     metric: { ru: "+180% предзаказов после релиза трейлера", en: "+180% pre-registrations after launch" },
-    duration: "1:04",
+    duration: "0:10",
     video: local("work-02"),
   },
   {
@@ -57,7 +57,7 @@ export const works: WorkItem[] = [
     title: { ru: "Хуки для сплит-теста в TikTok Ads", en: "Hooks for a TikTok Ads split test" },
     tag: { ru: "UA / Хуки", en: "UA / Hooks" },
     metric: { ru: "CTR 4,1% в TikTok Ads", en: "4.1% CTR on TikTok Ads" },
-    duration: "0:21",
+    duration: "0:10",
     video: local("work-03"),
   },
   {
@@ -67,17 +67,17 @@ export const works: WorkItem[] = [
     title: { ru: "Серия перформанс-креативов для казуальной игры", en: "Performance creative series for a casual title" },
     tag: { ru: "Перформанс", en: "Performance" },
     metric: { ru: "ROAS 3,4 на холодном трафике", en: "3.4 ROAS on cold traffic" },
-    duration: "0:18",
+    duration: "0:10",
     video: local("work-04"),
   },
   {
     id: "work-05",
     client: "BlockRush",
     category: "ua",
-    title: { ru: "UGC-имитация для paid-кампании", en: "UGC-style ads for a paid campaign" },
-    tag: { ru: "AI UGC / Перформанс", en: "AI UGC / Performance" },
+    title: { ru: "Экшн-хуки для перформанс-кампании", en: "Action hooks for a performance campaign" },
+    tag: { ru: "UA / Перформанс", en: "UA / Performance" },
     metric: { ru: "−28% к цене инсталла", en: "−28% cost per install" },
-    duration: "0:27",
+    duration: "0:10",
     video: local("work-05"),
   },
   {
@@ -87,7 +87,7 @@ export const works: WorkItem[] = [
     title: { ru: "Store-трейлер к запуску в App Store", en: "Store trailer for an App Store launch" },
     tag: { ru: "Трейлер / 3D", en: "Trailer / 3D" },
     metric: { ru: "Featured в App Store в неделю запуска", en: "Featured on the App Store launch week" },
-    duration: "0:45",
+    duration: "0:10",
     video: local("work-06"),
   },
 ];
@@ -107,7 +107,7 @@ export const reels: ReelItem[] = [
   },
   {
     id: "reel-03",
-    title: { ru: "Нативный UGC-формат", en: "Native UGC format" },
+    title: { ru: "Геймплей-нарезка под сторис", en: "Gameplay cutdown for stories" },
     platform: "Shorts",
     video: local("reel-03"),
   },
