@@ -33,14 +33,22 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": ["ProfessionalService", "Organization"],
     name: site.brand,
+    alternateName: "Nitroreel Studio",
     description: t.meta.description,
     url: `${site.url}/${lang}`,
+    logo: `${site.url}/brand/nitroreel-logo.png`,
     email: site.email,
     image: `${site.url}/media/hero-loop.jpg`,
     areaServed: "Worldwide",
     serviceType: t.services.items.map((item) => item.title),
+    knowsAbout: [
+      "UA video creatives",
+      "mobile game trailers",
+      "AI video production",
+      "performance marketing video",
+    ],
   };
 
   return (
