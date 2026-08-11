@@ -278,6 +278,14 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                 >
                   {site.telegramHandle}
                 </a>
+                <a
+                  href={site.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-muted transition-colors hover:text-fg"
+                >
+                  WhatsApp: {site.whatsappDisplay}
+                </a>
               </div>
             </div>
 

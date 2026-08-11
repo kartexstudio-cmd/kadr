@@ -65,6 +65,16 @@ export function Footer({
                   {site.telegramHandle}
                 </a>
               </li>
+              <li>
+                <a
+                  href={site.whatsapp}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="text-muted transition-colors hover:text-fg"
+                >
+                  {site.whatsappDisplay}
+                </a>
+              </li>
             </ul>
           </div>
 
