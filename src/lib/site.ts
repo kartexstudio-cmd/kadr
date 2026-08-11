@@ -1,8 +1,8 @@
 export const site = {
   brand: "Nitroreel",
-  domain: "nitroreel.studio",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://nitroreel.studio",
-  email: "hello@nitroreel.studio",
+  domain: "nitroreel.net",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://nitroreel.net",
+  email: "hello@nitroreel.net",
   telegram: "https://t.me/nitroreel",
   telegramHandle: "@nitroreel",
   behance: "https://behance.net/nitroreel",

@@ -12,6 +12,7 @@ import { ReelCard } from "@/components/video/reel-card";
 import { genres, reels, works } from "@/lib/content";
 import { defaultLocale, isLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
+import { seoPages } from "@/lib/seo-pages";
 import { site } from "@/lib/site";
 
 export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
@@ -138,6 +139,23 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                 </article>
               </Reveal>
             ))}
+          </div>
+
+          <div className="mt-10 border-t border-line pt-8">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.14em] text-muted">
+              {t.services.moreLabel}
+            </p>
+            <div className="flex flex-wrap gap-2.5">
+              {seoPages.map((page) => (
+                <a
+                  key={page.slug}
+                  href={`/${lang}/services/${page.slug}`}
+                  className="rounded-full border border-line px-4 py-2 text-sm text-muted transition-colors hover:border-accent/40 hover:text-fg"
+                >
+                  {page.h1[lang]}
+                </a>
+              ))}
+            </div>
           </div>
         </Section>
 

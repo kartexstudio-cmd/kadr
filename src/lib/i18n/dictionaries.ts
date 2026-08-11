@@ -49,6 +49,7 @@ const ru = {
     title: "Четыре направления, одна команда",
     subtitle:
       "Не передаём проект между подрядчиками: сценарий, продакшн, графика и адаптации под сети живут внутри одной студии.",
+    moreLabel: "Подробнее по задачам",
     items: [
       {
         title: "UA и перформанс-креативы",
@@ -289,6 +290,7 @@ const en: Dictionary = {
     title: "Four disciplines, one team",
     subtitle:
       "Nothing gets handed between vendors: script, production, graphics and network adaptations all live inside one studio.",
+    moreLabel: "More by use case",
     items: [
       {
         title: "UA & performance creatives",

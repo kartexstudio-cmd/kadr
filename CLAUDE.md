@@ -177,7 +177,7 @@ Tailwind v4, **конфига `tailwind.config` нет** — токены объ
 
 `src/app/[lang]/opengraph-image.tsx` (генерируется рантаймом), `sitemap.ts`, `robots.ts`,
 JSON-LD `ProfessionalService` прямо в `page.tsx`. Базовый URL — `NEXT_PUBLIC_SITE_URL`,
-фолбэк `https://nitroreel.studio` в `src/lib/site.ts`.
+фолбэк `https://nitroreel.net` в `src/lib/site.ts`.
 
 ## Что в проекте ненастоящее
 
@@ -189,8 +189,9 @@ JSON-LD `ProfessionalService` прямо в `page.tsx`. Базовый URL — `
 - **Кейсы, клиенты (`Vortex Play`, `NeonDash Games` и т.п.), метрики, отзывы** в `content.ts`
   и `dictionaries.ts` — придуманы, но намеренно звучат как мобильные игровые студии, чтобы
   не противоречить нише сайта до заливки настоящего портфолио.
-- **Контакты и домен** в `src/lib/site.ts` (`nitroreel.studio`, `hello@nitroreel.studio`,
-  соцсети) — выдуманы по решению владельца (реальные впишем перед покупкой домена).
+- **Домен настоящий** — `nitroreel.net` куплен и подключён (Cloudflare как DNS-хост,
+  A-запись на Vercel, без проксирования). **Email и соцсети всё ещё выдуманы** —
+  `hello@nitroreel.net` никуда не доставляется, почта не настроена, впишем реальные позже.
 
 ## Известные пробелы
 

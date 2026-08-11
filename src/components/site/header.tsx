@@ -11,11 +11,13 @@ export function Header({
   lang,
   nav,
   cta,
+  ctaHref = "#contact",
   labels,
 }: {
   lang: Locale;
   nav: NavItem[];
   cta: string;
+  ctaHref?: string;
   labels: { openMenu: string; closeMenu: string; langLabel: string };
 }) {
   const [scrolled, setScrolled] = useState(false);
@@ -98,7 +100,7 @@ export function Header({
           </div>
 
           <a
-            href="#contact"
+            href={ctaHref}
             className="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-accent-ink transition hover:brightness-110 sm:inline-flex"
           >
             {cta}
@@ -145,7 +147,7 @@ export function Header({
             </a>
           ))}
           <a
-            href="#contact"
+            href={ctaHref}
             onClick={() => setMenuOpen(false)}
             className="mt-4 rounded-full bg-accent px-5 py-3 text-center text-sm font-semibold text-accent-ink"
           >
