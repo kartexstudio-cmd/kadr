@@ -44,11 +44,16 @@ const ru = {
   genres: {
     label: "Форматы и жанры",
   },
+  clients: {
+    label: "Нам доверяют команды из",
+  },
   services: {
     eyebrow: "Услуги",
     title: "Четыре направления, одна команда",
     subtitle:
       "Не передаём проект между подрядчиками: сценарий, продакшн, графика и адаптации под сети живут внутри одной студии.",
+    priceLine:
+      "Батч из 10 UA-креативов (15–30 сек + хук-нарезки 6–9 сек) — от 180 000 ₽. Store-трейлер до 30 сек — от 250 000 ₽, cinematic-трейлер 45–60 сек — от 400 000 ₽. Точная смета — после брифа.",
     moreLabel: "Подробнее по задачам",
     items: [
       {
@@ -78,11 +83,15 @@ const ru = {
     title: "Креативы, которые снизили CPI",
     subtitle: "Выберите проект — видео откроется в плеере со звуком.",
     filterAll: "Все",
+    filters: {
+      ua: "UA и перформанс",
+      trailer: "Трейлеры и cinematic",
+    },
     result: "Результат",
   },
   reels: {
     eyebrow: "Вертикальные форматы",
-    title: "UA-креативы под ленту",
+    title: "Под TikTok, Reels и Shorts",
     subtitle:
       "Каждый ролик собираем через AI-продакшн в 9:16 с новым хуком под TikTok, Reels и Shorts — тестируем в разы больше связок за тот же бюджет.",
   },
@@ -92,7 +101,7 @@ const ru = {
     steps: [
       {
         title: "Бриф и гипотезы",
-        text: "Разбираем игру, аудиторию и метрику — CPI, CTR, ROAS или store-конверсию. За 40 минут собираем пул гипотез для хуков.",
+        text: "Разбираем игру, аудиторию и метрику — CPI, CTR, ROAS или store-конверсию — и забираем ваши исходники: геймплейные записи, арт, UI, брендгайд. За 40 минут собираем пул гипотез для хуков на основе реального материала, а не общих референсов.",
       },
       {
         title: "Сценарий и раскадровка",
@@ -128,8 +137,8 @@ const ru = {
         metric: "Стоимость батча (10 хуков)",
         classicValue: "от 400 000 ₽",
         classicWidth: 100,
-        aiValue: "от 120 000 ₽",
-        aiWidth: 30,
+        aiValue: "от 180 000 ₽",
+        aiWidth: 45,
       },
       {
         metric: "Срок",
@@ -177,7 +186,7 @@ const ru = {
     items: [
       {
         q: "Сколько стоит проект?",
-        a: "Батч из 10 UA-креативов начинается от 120 000 ₽. Cinematic-трейлер для стора — от 300 000 ₽. AI-продакшн визуала дешевле классической съёмки — это и держит цену ниже рынка. Точную смету присылаем в течение суток после брифа.",
+        a: "Батч из 10 UA-креативов (15–30 сек, плюс хук-нарезки 6–9 сек для сплит-теста) — от 180 000 ₽. Store-трейлер до 30 секунд — от 250 000 ₽, cinematic-трейлер 45–60 секунд — от 400 000 ₽. AI-продакшн визуала дешевле классической съёмки — это и держит цену ниже рынка. Точную смету присылаем в течение суток после брифа.",
       },
       {
         q: "Какие сроки?",
@@ -190,6 +199,10 @@ const ru = {
       {
         q: "Это AI-генерация — не будет выглядеть дёшево?",
         a: "Визуал собираем через современные AI-инструменты, но каждый кадр проходит ручную доработку, цветокор и монтаж — по качеству картинки не уступает классической съёмке или рендеру, а по цене и скорости выигрывает.",
+      },
+      {
+        q: "Это правда наша игра, а не что-то придуманное AI?",
+        a: "Да. В основе — ваши реальные ассеты: геймплейные записи, арт, UI, брендгайд. AI используем для монтажа, анимации и генерации хуков поверх этого материала, а не для придумывания игры с нуля — стиль, персонажи и интерфейс в ролике остаются вашими.",
       },
       {
         q: "Сколько правок входит в стоимость?",
@@ -220,9 +233,9 @@ const ru = {
       companyPlaceholder: "Необязательно",
       budget: "Бюджет",
       budgetOptions: [
-        "До 150 000 ₽",
-        "150 000 – 400 000 ₽",
-        "400 000 – 1 000 000 ₽",
+        "До 100 000 ₽",
+        "100 000 – 500 000 ₽",
+        "500 000 – 1 000 000 ₽",
         "Больше 1 000 000 ₽",
         "Пока не знаю",
       ],
@@ -315,11 +328,16 @@ const en: Dictionary = {
   genres: {
     label: "Formats & genres",
   },
+  clients: {
+    label: "Trusted by teams at",
+  },
   services: {
     eyebrow: "Services",
     title: "Four disciplines, one team",
     subtitle:
       "Nothing gets handed between vendors: script, production, graphics and network adaptations all live inside one studio.",
+    priceLine:
+      "A batch of 10 UA creatives (15–30 sec + 6–9 sec hook cutdowns) — from €1,800. A store trailer up to 30 sec — from €2,500, a 45–60 sec cinematic trailer — from €4,000. Exact quote after the brief.",
     moreLabel: "More by use case",
     items: [
       {
@@ -349,11 +367,15 @@ const en: Dictionary = {
     title: "Creatives that brought CPI down",
     subtitle: "Pick a project — the video opens in a player with sound.",
     filterAll: "All",
+    filters: {
+      ua: "UA & performance",
+      trailer: "Trailers & cinematic",
+    },
     result: "Result",
   },
   reels: {
     eyebrow: "Vertical formats",
-    title: "UA creatives for the feed",
+    title: "Built for TikTok, Reels & Shorts",
     subtitle:
       "Every video is built with AI production in 9:16 with a new hook for TikTok, Reels and Shorts — we test far more combinations on the same budget.",
   },
@@ -363,7 +385,7 @@ const en: Dictionary = {
     steps: [
       {
         title: "Brief & hypotheses",
-        text: "We map the game, the audience and the metric — CPI, CTR, ROAS or store conversion. Forty minutes is enough for a pool of hook hypotheses.",
+        text: "We map the game, the audience and the metric — CPI, CTR, ROAS or store conversion — and collect your source material: gameplay capture, art, UI, brand guide. Forty minutes is enough for a pool of hook hypotheses built on your real assets, not generic references.",
       },
       {
         title: "Script & storyboard",
@@ -399,8 +421,8 @@ const en: Dictionary = {
         metric: "Batch cost (10 hooks)",
         classicValue: "from €4,000",
         classicWidth: 100,
-        aiValue: "from €1,200",
-        aiWidth: 30,
+        aiValue: "from €1,800",
+        aiWidth: 45,
       },
       {
         metric: "Timeline",
@@ -448,7 +470,7 @@ const en: Dictionary = {
     items: [
       {
         q: "How much does a project cost?",
-        a: "A batch of ten UA creatives starts at €1,200. A cinematic store trailer starts at €3,000. AI visual production is cheaper than a classic shoot — that's what keeps the price below the market rate. You get an exact quote within a day of the brief.",
+        a: "A batch of ten UA creatives (15–30 sec, plus 6–9 sec hook cutdowns for split testing) starts at €1,800. A store trailer up to 30 seconds starts at €2,500, a 45–60 second cinematic trailer starts at €4,000. AI visual production is cheaper than a classic shoot — that's what keeps the price below the market rate. You get an exact quote within a day of the brief.",
       },
       {
         q: "What are the timelines?",
@@ -461,6 +483,10 @@ const en: Dictionary = {
       {
         q: "Is this AI-generated — won't it look cheap?",
         a: "We build the visuals with modern AI tools, but every frame gets manual polish, colour grading and editing — the image quality matches a classic shoot or render, while the price and speed win.",
+      },
+      {
+        q: "Is this really our game, or does the AI make things up?",
+        a: "Yes, it's your game. We start from your real assets — gameplay capture, art, UI, brand guide. AI is used for editing, animation and hook generation on top of that material, not to invent a game from scratch — the style, characters and interface in the video stay yours.",
       },
       {
         q: "How many revisions are included?",
@@ -490,9 +516,9 @@ const en: Dictionary = {
       companyPlaceholder: "Optional",
       budget: "Budget",
       budgetOptions: [
-        "Under €1,500",
-        "€1,500 – €4,000",
-        "€4,000 – €10,000",
+        "Under €1,000",
+        "€1,000 – €5,000",
+        "€5,000 – €10,000",
         "Over €10,000",
         "Not sure yet",
       ],

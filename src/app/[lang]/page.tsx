@@ -8,7 +8,7 @@ import { ComparisonChart } from "@/components/site/comparison-chart";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { LightboxProvider } from "@/components/video/lightbox";
-import { WorkCard } from "@/components/video/work-card";
+import { WorkGrid } from "@/components/video/work-grid";
 import { ReelCard } from "@/components/video/reel-card";
 import { genres, reels, works } from "@/lib/content";
 import { defaultLocale, isLocale } from "@/lib/i18n/config";
@@ -65,28 +65,22 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       <main id="main">
         <Hero t={t.hero} scrollHint={t.a11y.scrollHint} />
 
+        {/* Клиенты */}
+        <ClientsMarquee items={works.map((item) => item.client)} label={t.clients.label} />
+
         {/* Форматы и жанры */}
         <ClientsMarquee items={genres} label={t.genres.label} />
 
         {/* Работы */}
         <Section id="work" eyebrow={t.work.eyebrow} title={t.work.title} subtitle={t.work.subtitle}>
-          <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-            {works.map((item, index) => (
-              <Reveal key={item.id} delay={(index % 3) * 0.08}>
-                <WorkCard
-                  source={item.video}
-                  client={item.client}
-                  title={item.title[lang]}
-                  tag={item.tag[lang]}
-                  metric={item.metric[lang]}
-                  duration={item.duration}
-                  resultLabel={t.work.result}
-                  playLabel={t.a11y.play}
-                  priority={index < 3}
-                />
-              </Reveal>
-            ))}
-          </div>
+          <WorkGrid
+            works={works}
+            lang={lang}
+            filterAllLabel={t.work.filterAll}
+            filterLabels={t.work.filters}
+            resultLabel={t.work.result}
+            playLabel={t.a11y.play}
+          />
         </Section>
 
         {/* Вертикальные форматы */}
@@ -118,6 +112,10 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           title={t.services.title}
           subtitle={t.services.subtitle}
         >
+          <p className="-mt-6 mb-10 max-w-2xl text-sm text-muted">
+            <span className="font-semibold text-fg">{t.services.priceLine}</span>
+          </p>
+
           <div className="grid gap-5 md:grid-cols-2">
             {t.services.items.map((service, index) => (
               <Reveal key={service.title} delay={(index % 2) * 0.08}>

@@ -3,9 +3,12 @@ import type { VideoSource } from "@/lib/video";
 
 type Localized = Record<Locale, string>;
 
+export type WorkCategory = "ua" | "trailer";
+
 export type WorkItem = {
   id: string;
   client: string;
+  category: WorkCategory;
   title: Localized;
   tag: Localized;
   metric: Localized;
@@ -30,6 +33,7 @@ export const works: WorkItem[] = [
   {
     id: "work-01",
     client: "Vortex Play",
+    category: "ua",
     title: { ru: "UA-кампания для гиперкэжуал-хита", en: "UA campaign for a hyper-casual hit" },
     tag: { ru: "UA / Перформанс", en: "UA / Performance" },
     metric: { ru: "CPI ниже плана на 34%", en: "CPI 34% below target" },
@@ -39,6 +43,7 @@ export const works: WorkItem[] = [
   {
     id: "work-02",
     client: "NeonDash Games",
+    category: "trailer",
     title: { ru: "Cinematic-трейлер к обновлению", en: "Cinematic trailer for a major update" },
     tag: { ru: "Трейлер / Cinematic", en: "Trailer / Cinematic" },
     metric: { ru: "+180% предзаказов после релиза трейлера", en: "+180% pre-registrations after launch" },
@@ -48,6 +53,7 @@ export const works: WorkItem[] = [
   {
     id: "work-03",
     client: "DriftLoop",
+    category: "ua",
     title: { ru: "Хуки для сплит-теста в TikTok Ads", en: "Hooks for a TikTok Ads split test" },
     tag: { ru: "UA / Хуки", en: "UA / Hooks" },
     metric: { ru: "CTR 4,1% в TikTok Ads", en: "4.1% CTR on TikTok Ads" },
@@ -57,6 +63,7 @@ export const works: WorkItem[] = [
   {
     id: "work-04",
     client: "Meadowlark Games",
+    category: "ua",
     title: { ru: "Серия перформанс-креативов для казуальной игры", en: "Performance creative series for a casual title" },
     tag: { ru: "Перформанс", en: "Performance" },
     metric: { ru: "ROAS 3,4 на холодном трафике", en: "3.4 ROAS on cold traffic" },
@@ -66,6 +73,7 @@ export const works: WorkItem[] = [
   {
     id: "work-05",
     client: "BlockRush",
+    category: "ua",
     title: { ru: "UGC-имитация для paid-кампании", en: "UGC-style ads for a paid campaign" },
     tag: { ru: "AI UGC / Перформанс", en: "AI UGC / Performance" },
     metric: { ru: "−28% к цене инсталла", en: "−28% cost per install" },
@@ -75,6 +83,7 @@ export const works: WorkItem[] = [
   {
     id: "work-06",
     client: "Rocket Paw",
+    category: "trailer",
     title: { ru: "Store-трейлер к запуску в App Store", en: "Store trailer for an App Store launch" },
     tag: { ru: "Трейлер / 3D", en: "Trailer / 3D" },
     metric: { ru: "Featured в App Store в неделю запуска", en: "Featured on the App Store launch week" },
