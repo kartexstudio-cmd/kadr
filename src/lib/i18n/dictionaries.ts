@@ -49,8 +49,14 @@ const ru = {
     title: "Три направления, одна команда",
     subtitle:
       "Не передаём проект между подрядчиками: сценарий, продакшн, графика и адаптации под сети живут внутри одной студии.",
-    priceLine:
-      "Батч из 10 UA-креативов (15–30 сек + хук-нарезки 6–9 сек) — от 180 000 ₽. Store-трейлер до 30 сек — от 250 000 ₽, cinematic-трейлер 45–60 сек — от 400 000 ₽. Анимация и CGI (2D/3D, 15–20 сек) — от 27 000 ₽ за ролик, пакет из 3 — от 65 000 ₽. Точная смета — после брифа.",
+    priceItems: [
+      { label: "Батч из 10 UA-креативов (15–30 сек + хук-нарезки 6–9 сек)", price: "от 180 000 ₽" },
+      { label: "Store-трейлер до 30 сек", price: "от 250 000 ₽" },
+      { label: "Cinematic-трейлер 45–60 сек", price: "от 400 000 ₽" },
+      { label: "Анимация и CGI (2D/3D, 15–20 сек) — 1 ролик", price: "от 27 000 ₽" },
+      { label: "Анимация и CGI — пакет из 3 роликов", price: "от 65 000 ₽" },
+    ],
+    priceNote: "Точная смета — после брифа.",
     batchDetails: {
       title: "Что входит в батч за 180 000 ₽",
       items: [
@@ -90,6 +96,44 @@ const ru = {
       trailer: "Трейлеры и cinematic",
     },
     result: "Результат",
+  },
+  quality: {
+    eyebrow: "Качество картинки",
+    title: "Без «мыла» и артефактов",
+    subtitle:
+      "У многих AI-студий результат легко узнать — смазанные детали, шум, пикселизация, будто видео пересжали десять раз. Мы прогоняем каждую генерацию через несколько итераций, пока не получим чистую картинку в Full HD, и только потом показываем клиенту.",
+    typicalLabel: "Типичная AI-генерация",
+    oursLabel: "Nitroreel — Full HD, без артефактов",
+    pairs: [
+      { typical: "/media/quality-typical-01.jpg", clean: "/media/work-02.jpg" },
+      { typical: "/media/quality-typical-02.jpg", clean: "/media/hero-loop.jpg" },
+    ],
+  },
+  fullService: {
+    eyebrow: "Под ключ",
+    title: "Не только визуал — весь проект целиком",
+    subtitle:
+      "Не нужно собирать команду по кускам и сводить чужие материалы самому — сценарий, визуал, звук и монтаж живут внутри одной студии.",
+    optionalLabel: "Опционально",
+    items: [
+      {
+        title: "Сценарий",
+        text: "Опционально — пишем сами под гипотезу хука или дорабатываем присланный вами.",
+        optional: true,
+      },
+      {
+        title: "Визуал",
+        text: "AI-генерация кадра: катсцены, геймплей, персонажи, окружения — под задачу.",
+      },
+      {
+        title: "Звук и музыка",
+        text: "Саунд-дизайн, музыка, сведение — ролик не отдаём немым.",
+      },
+      {
+        title: "Видеомонтаж",
+        text: "Сборка, ритм, цветокоррекция и финальная версия под конкретную площадку.",
+      },
+    ],
   },
   reels: {
     eyebrow: "Вертикальные форматы",
@@ -335,8 +379,14 @@ const en: Dictionary = {
     title: "Three disciplines, one team",
     subtitle:
       "Nothing gets handed between vendors: script, production, graphics and network adaptations all live inside one studio.",
-    priceLine:
-      "A batch of 10 UA creatives (15–30 sec + 6–9 sec hook cutdowns) — from €1,800. A store trailer up to 30 sec — from €2,500, a 45–60 sec cinematic trailer — from €4,000. Animation & CGI (2D/3D, 15–20 sec) — from €270 per video, a pack of 3 — from €650. Exact quote after the brief.",
+    priceItems: [
+      { label: "A batch of 10 UA creatives (15–30 sec + 6–9 sec hook cutdowns)", price: "from €1,800" },
+      { label: "Store trailer up to 30 sec", price: "from €2,500" },
+      { label: "Cinematic trailer, 45–60 sec", price: "from €4,000" },
+      { label: "Animation & CGI (2D/3D, 15–20 sec) — 1 video", price: "from €270" },
+      { label: "Animation & CGI — pack of 3 videos", price: "from €650" },
+    ],
+    priceNote: "Exact quote after the brief.",
     batchDetails: {
       title: "What's included in a €1,800 batch",
       items: [
@@ -376,6 +426,44 @@ const en: Dictionary = {
       trailer: "Trailers & cinematic",
     },
     result: "Result",
+  },
+  quality: {
+    eyebrow: "Image quality",
+    title: "No mush, no artifacts",
+    subtitle:
+      "You can usually spot AI-studio output at a glance — smeared detail, noise, pixelation, like the video got recompressed ten times. We run every generation through several iterations until the image is clean in Full HD, and only then show it to the client.",
+    typicalLabel: "Typical AI generation",
+    oursLabel: "Nitroreel — Full HD, no artifacts",
+    pairs: [
+      { typical: "/media/quality-typical-01.jpg", clean: "/media/work-02.jpg" },
+      { typical: "/media/quality-typical-02.jpg", clean: "/media/hero-loop.jpg" },
+    ],
+  },
+  fullService: {
+    eyebrow: "Turnkey",
+    title: "Not just visuals — the whole project",
+    subtitle:
+      "No need to assemble a team piece by piece or stitch other people's work together yourself — script, visuals, sound and edit all live inside one studio.",
+    optionalLabel: "Optional",
+    items: [
+      {
+        title: "Script",
+        text: "Optional — we write it around the hook hypothesis or refine what you send us.",
+        optional: true,
+      },
+      {
+        title: "Visuals",
+        text: "AI-generated footage: cutscenes, gameplay, characters, environments — built for the task.",
+      },
+      {
+        title: "Sound & music",
+        text: "Sound design, music, mixing — we never hand over a silent video.",
+      },
+      {
+        title: "Video editing",
+        text: "Assembly, pacing, colour grading and a final cut built for the specific platform.",
+      },
+    ],
   },
   reels: {
     eyebrow: "Vertical formats",

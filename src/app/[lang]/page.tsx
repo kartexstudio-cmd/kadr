@@ -5,6 +5,8 @@ import { ContactForm } from "@/components/site/contact-form";
 import { ClientsMarquee } from "@/components/site/clients-marquee";
 import { ChatWidget } from "@/components/site/chat-widget";
 import { ComparisonChart } from "@/components/site/comparison-chart";
+import { QualityComparison } from "@/components/site/quality-comparison";
+import { FullService } from "@/components/site/full-service";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { ServiceIcon } from "@/components/ui/service-icons";
@@ -89,6 +91,25 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           />
         </Section>
 
+        {/* Качество картинки */}
+        <Section
+          eyebrow={t.quality.eyebrow}
+          title={t.quality.title}
+          subtitle={t.quality.subtitle}
+          className="bg-ink-soft"
+        >
+          <QualityComparison t={t.quality} />
+        </Section>
+
+        {/* Под ключ */}
+        <Section
+          eyebrow={t.fullService.eyebrow}
+          title={t.fullService.title}
+          subtitle={t.fullService.subtitle}
+        >
+          <FullService t={t.fullService} />
+        </Section>
+
         {/* Вертикальные форматы */}
         <Section
           id="reels"
@@ -118,9 +139,18 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           title={t.services.title}
           subtitle={t.services.subtitle}
         >
-          <p className="-mt-6 mb-4 max-w-2xl text-sm text-muted">
-            <span className="font-semibold text-fg">{t.services.priceLine}</span>
-          </p>
+          <div className="-mt-6 mb-4 max-w-2xl divide-y divide-line overflow-hidden rounded-card border border-line">
+            {t.services.priceItems.map((item) => (
+              <div
+                key={item.label}
+                className="flex items-baseline justify-between gap-4 px-5 py-3.5"
+              >
+                <span className="text-sm text-muted">{item.label}</span>
+                <span className="shrink-0 font-display text-sm font-bold">{item.price}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mb-8 text-sm text-muted">{t.services.priceNote}</p>
 
           <details className="group mb-10 max-w-2xl rounded-card border border-line p-5">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-base font-bold [&::-webkit-details-marker]:hidden">
