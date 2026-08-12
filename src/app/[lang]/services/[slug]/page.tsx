@@ -66,7 +66,6 @@ export default async function ServicePage({
     { href: `/${lang}#work`, label: t.nav.work },
     { href: `/${lang}#services`, label: t.nav.services },
     { href: `/${lang}#process`, label: t.nav.process },
-    { href: `/${lang}#reviews`, label: t.nav.reviews },
     { href: `/${lang}#faq`, label: t.nav.faq },
   ];
 

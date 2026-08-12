@@ -109,7 +109,7 @@ export function ContactForm({ lang, t }: { lang: Locale; t: Dictionary["contact"
             {t.budget}
           </label>
           <select id={field("budget")} name="budget" defaultValue="" className={fieldClass}>
-            <option value="">—</option>
+            <option value="">-</option>
             {t.budgetOptions.map((option) => (
               <option key={option} value={option}>
                 {option}

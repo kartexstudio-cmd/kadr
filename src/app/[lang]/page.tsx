@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { Hero } from "@/components/site/hero";
@@ -29,7 +30,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
     { href: "#work", label: t.nav.work },
     { href: "#services", label: t.nav.services },
     { href: "#process", label: t.nav.process },
-    { href: "#reviews", label: t.nav.reviews },
     { href: "#faq", label: t.nav.faq },
   ];
 
@@ -266,27 +266,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           <ComparisonChart t={t.comparison} />
         </Section>
 
-        {/* Отзывы */}
-        <Section
-          id="reviews"
-          eyebrow={t.testimonials.eyebrow}
-          title={t.testimonials.title}
-        >
-          <div className="grid gap-5 lg:grid-cols-3">
-            {t.testimonials.items.map((item, index) => (
-              <Reveal key={item.name} delay={index * 0.08}>
-                <figure className="card flex h-full flex-col justify-between gap-8 p-7 md:p-8">
-                  <blockquote className="text-lg leading-relaxed">{item.quote}</blockquote>
-                  <figcaption>
-                    <p className="font-display font-bold">{item.name}</p>
-                    <p className="text-sm text-muted">{item.role}</p>
-                  </figcaption>
-                </figure>
-              </Reveal>
-            ))}
-          </div>
-        </Section>
-
         {/* FAQ */}
         <Section id="faq" eyebrow={t.faq.eyebrow} title={t.faq.title} className="bg-ink-soft">
           <div className="mx-auto max-w-3xl divide-y divide-line border-y border-line">
@@ -333,6 +312,20 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                   </li>
                 ))}
               </ul>
+
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/media/peter-pavlov.jpg"
+                  alt={t.contact.person.photoAlt}
+                  width={56}
+                  height={56}
+                  className="h-14 w-14 shrink-0 rounded-full border border-line object-cover"
+                />
+                <div>
+                  <p className="font-display text-base font-bold">{t.contact.person.name}</p>
+                  <p className="text-sm text-muted">{t.contact.person.role}</p>
+                </div>
+              </div>
 
               <div className="space-y-2">
                 <a
