@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter, Manrope } from "next/font/google";
 import "@/app/globals.css";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -73,6 +74,7 @@ export default async function LangLayout({
       <body className="min-h-dvh antialiased">
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
