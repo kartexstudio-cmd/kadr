@@ -483,6 +483,354 @@ export const seoPages: SeoPage[] = [
       },
     ],
   },
+  {
+    slug: "google-ads-creative",
+    metaTitle: { ru: "Креативы для Google Ads UA | Nitroreel", en: "Creatives for Google Ads UA | Nitroreel" },
+    metaDescription: {
+      ru: "Видеокреативы для Google Ads UA: адаптация под AdMob, YouTube и Discovery, хук под автозапуск без звука, burst-тест перед масштабированием.",
+      en: "Video creatives for Google Ads UA: adapted for AdMob, YouTube and Discovery, a sound-off autoplay hook, burst-tested before scaling.",
+    },
+    eyebrow: { ru: "UA-видео · Google Ads", en: "UA video · Google Ads" },
+    h1: { ru: "Креативы для Google Ads UA", en: "Creatives for Google Ads UA" },
+    lead: {
+      ru: "Google Ads UA - это не один плейсмент, а сеть AdMob, YouTube и Discovery одновременно, и в каждом ролик работает по-своему.",
+      en: "Google Ads UA isn't one placement - it's AdMob, YouTube and Discovery at once, and the same video performs differently in each.",
+    },
+    intro: {
+      ru: [
+        "Google UA-кампании автоматически подбирают, где показать креатив - от баннерной сетки AdMob до ленты YouTube, и алгоритм сам решает, что масштабировать. Мы собираем сразу несколько форматов и длин под один хук, чтобы у Google было из чего выбирать, а не один ролик на все плейсменты.",
+        "Генерируем визуал через AI и тестируем гипотезы хуков перед полным батчем - burst-тест показывает, какая связка держит CTR и IPM в AdMob, прежде чем тратить бюджет на масштабирование в Performance Max.",
+      ],
+      en: [
+        "Google UA campaigns pick the placement automatically - anywhere from the AdMob banner network to the YouTube feed - and the algorithm decides what to scale on its own. We build several formats and lengths around one hook so Google has something to choose from, instead of one video stretched across every placement.",
+        "We generate the visuals with AI and test hook hypotheses before the full batch - a burst test shows which combination holds CTR and IPM in AdMob before we spend budget scaling it through Performance Max.",
+      ],
+    },
+    bullets: {
+      ru: [
+        "Форматы под AdMob, YouTube, Discovery из одного хука",
+        "AI-генерация визуала вместо классической съёмки",
+        "Хук под автозапуск без звука",
+        "Burst-тест перед Performance Max",
+      ],
+      en: [
+        "Formats for AdMob, YouTube, Discovery from one hook",
+        "AI-generated visuals instead of a classic shoot",
+        "A hook built for muted autoplay",
+        "Burst-tested before Performance Max",
+      ],
+    },
+    faq: [
+      {
+        q: { ru: "Работаете с кампаниями Performance Max?", en: "Do you work with Performance Max campaigns?" },
+        a: {
+          ru: "Да, знаем, как формат ассетов влияет на то, что алгоритм Performance Max будет масштабировать, и собираем батч с расчётом на это.",
+          en: "Yes - we know how the asset format affects what Performance Max ends up scaling, and we build the batch with that in mind.",
+        },
+      },
+      {
+        q: { ru: "Нужны отдельные ролики для AdMob и YouTube?", en: "Do AdMob and YouTube need separate videos?" },
+        a: {
+          ru: "Обычно да - в AdMob решает первая секунда без звука, в YouTube можно закладывать чуть более длинный разгон. Собираем оба из одного набора AI-генераций, а не с нуля.",
+          en: "Usually yes - AdMob lives or dies by the first silent second, YouTube can afford a slightly longer build-up. We cut both from the same set of AI generations instead of starting over.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "playable-ads",
+    metaTitle: { ru: "Playable-реклама для мобильных игр | Nitroreel", en: "Playable ads for mobile games | Nitroreel" },
+    metaDescription: {
+      ru: "Продакшн playable-креативов: интерактивный прототип механики за 15–30 секунд, видео-обёртка как запасной хук, тест перед полным батчем.",
+      en: "Playable ad production: a 15–30 second interactive prototype of the mechanic, a video end-card as a fallback hook, tested before the full batch.",
+    },
+    eyebrow: { ru: "UA-видео · Playable", en: "UA video · Playable" },
+    h1: { ru: "Playable-реклама для мобильных игр", en: "Playable ads for mobile games" },
+    lead: {
+      ru: "Playable даёт попробовать механику до установки - но плохо собранный прототип портит впечатление хуже, чем обычное видео.",
+      en: "A playable ad lets someone try the mechanic before they install - but a poorly built prototype does more damage than a plain video ever would.",
+    },
+    intro: {
+      ru: [
+        "Собираем интерактивный прототип вокруг одной механики - той, что реально держит retention в игре, а не самой эффектной с виду. Тапнуть, свайпнуть, собрать комбо: задача - дать почувствовать игру за 15–30 секунд, а не показать демо всех фич сразу.",
+        "Визуал и анимацию для прототипа собираем через AI - это быстрее ручной сборки под HTML5/Unity плеер и дешевле, чем тестировать несколько вариантов вручную. К каждому playable добавляем видео-обёртку с тем же хуком - на случай площадок, где интерактив не поддерживается.",
+      ],
+      en: [
+        "We build the interactive prototype around one mechanic - the one that actually drives retention in the game, not just the flashiest-looking one. Tap, swipe, chain a combo: the goal is to make someone feel the game in 15–30 seconds, not demo every feature at once.",
+        "We build the prototype's visuals and animation with AI - faster than hand-building for an HTML5/Unity player, and cheaper than testing several versions by hand. Every playable ships with a video end-card built around the same hook, for placements that don't support interactive units.",
+      ],
+    },
+    bullets: {
+      ru: [
+        "Прототип вокруг одной retention-механики",
+        "AI-генерация визуала для HTML5/Unity плеера",
+        "Видео-обёртка с тем же хуком как запасной вариант",
+        "Тест конверсии в install перед масштабированием",
+      ],
+      en: [
+        "A prototype built around one retention mechanic",
+        "AI-generated visuals for the HTML5/Unity player",
+        "A video end-card with the same hook as a fallback",
+        "Install-conversion tested before scaling",
+      ],
+    },
+    faq: [
+      {
+        q: { ru: "На каких сетях запускаются playable?", en: "Which networks support playable ads?" },
+        a: {
+          ru: "Meta, Google Ads UA, Unity Ads, Applovin, TikTok - собираем под технические требования конкретной сети, они отличаются по весу файла и SDK.",
+          en: "Meta, Google Ads UA, Unity Ads, AppLovin, TikTok - we build to each network's specific technical limits, since file size and SDK requirements differ.",
+        },
+      },
+      {
+        q: { ru: "Сколько занимает продакшн playable?", en: "How long does a playable ad take to produce?" },
+        a: {
+          ru: "Обычно 5–7 дней на одну механику, включая интерактивный прототип и видео-обёртку - дольше, чем обычный UA-ролик, но тестируем меньше вариантов сразу.",
+          en: "Usually 5–7 days per mechanic, including the interactive prototype and the video end-card - longer than a plain UA video, but we test fewer variants at once.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "ua-video-casual",
+    metaTitle: { ru: "UA-видео для casual игр | Nitroreel", en: "UA video for casual games | Nitroreel" },
+    metaDescription: {
+      ru: "Видеокреативы для casual-игр: спокойный темп, satisfaction-моменты вместо агрессивного хука, адаптации под Meta, Google Ads UA, TikTok.",
+      en: "Video creatives for casual games: a calmer pace, satisfaction moments instead of an aggressive hook, adapted for Meta, Google Ads UA, TikTok.",
+    },
+    eyebrow: { ru: "UA-видео · Casual", en: "UA video · Casual" },
+    h1: { ru: "UA-видео для casual игр", en: "UA video for casual games" },
+    lead: {
+      ru: "В casual решает не резкость хука, а ощущение удовольствия от процесса - агрессивный монтаж из hypercasual здесь работает хуже, а не лучше.",
+      en: "Casual isn't won with a sharp hook - it's won by the pleasure of the process itself, and the aggressive editing that works in hyper-casual actually performs worse here.",
+    },
+    intro: {
+      ru: [
+        "Аудитория casual - это в основном не геймеры в узком смысле, а люди, которые ищут спокойное занятие на 5–10 минут. Ролик должен передать этот темп: satisfaction-момент - идеальный ряд, чистый сорт, красивое завершение уровня - а не набор резких склеек.",
+        "Генерируем визуал через AI под конкретный satisfaction-момент вашей игры и тестируем несколько темпов монтажа - от спокойного до чуть более динамичного - burst-тестом, чтобы найти баланс между вовлечением и естественным ощущением от игры.",
+      ],
+      en: [
+        "The casual audience isn't gamers in the narrow sense - mostly people looking for a calm five-to-ten-minute occupation. The video needs to carry that pace: a satisfaction moment - a perfect row, a clean sort, a tidy level clear - not a string of sharp cuts.",
+        "We generate the visuals with AI around your game's specific satisfaction moment and burst-test a few editing paces - from calm to slightly more dynamic - to find the balance between engagement and how the game actually feels.",
+      ],
+    },
+    bullets: {
+      ru: [
+        "Темп монтажа под satisfaction, не резкий хук",
+        "AI-генерация под конкретный игровой момент",
+        "Адаптации под Meta, Google Ads UA, TikTok",
+        "Burst-тест темпа перед батчем",
+      ],
+      en: [
+        "Editing paced for satisfaction, not a sharp hook",
+        "AI generation built around a specific in-game moment",
+        "Adaptations for Meta, Google Ads UA, TikTok",
+        "Pacing burst-tested before the batch",
+      ],
+    },
+    faq: [
+      {
+        q: {
+          ru: "Чем это отличается от hypercasual-креатива?",
+          en: "How is this different from a hyper-casual creative?",
+        },
+        a: {
+          ru: "Темпом и посылом: hypercasual продаёт конфликт и реакцию за секунду, casual - процесс и результат. Один и тот же хук из hypercasual в casual обычно теряет CTR.",
+          en: "Pace and message: hyper-casual sells a conflict and a snap reaction, casual sells the process and the payoff. A hyper-casual hook usually loses CTR when dropped into a casual campaign.",
+        },
+      },
+      {
+        q: {
+          ru: "Нужен реальный геймплей или можно AI-имитацию?",
+          en: "Do you need real gameplay, or can it be an AI approximation?",
+        },
+        a: {
+          ru: "Работаем и так, и так - если механика простая, генерируем визуал через AI по референсам игры; для сложных уровней иногда быстрее записать реальный геймплей и доработать его.",
+          en: "Both work - for a simple mechanic we generate the visuals with AI from the game's references; for more complex levels it's sometimes faster to capture real gameplay and refine it.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "gacha-live-service-video",
+    metaTitle: { ru: "Видео для gacha и live-service игр | Nitroreel", en: "Video for gacha and live-service games | Nitroreel" },
+    metaDescription: {
+      ru: "Ролики под баннеры персонажей, ивенты и сезонные апдейты gacha-игр - AI-рендеры вместо ручного CGI, синхронизация с датой релиза.",
+      en: "Videos for character banners, events and seasonal updates in gacha games - AI renders instead of manual CGI, synced with the release date.",
+    },
+    eyebrow: { ru: "Трейлеры · Gacha / live-service", en: "Trailers · Gacha / live-service" },
+    h1: { ru: "Видео для gacha и live-service игр", en: "Video for gacha and live-service games" },
+    lead: {
+      ru: "У gacha и live-service игр нет одного релиза - есть постоянный календарь баннеров, ивентов и сезонов, и под каждый нужен свой ролик в сжатые сроки.",
+      en: "Gacha and live-service games don't have a single launch - they run on a constant calendar of banners, events and seasons, each needing its own video on a tight deadline.",
+    },
+    intro: {
+      ru: [
+        "Работаем по календарю обновлений: баннер нового персонажа, сезонный ивент, коллаборация - для каждого нужен ролик за несколько дней, а не недель, иначе он выходит после пика интереса аудитории.",
+        "Собираем через AI-рендеры персонажей и катсцены - это быстрее ручного CGI-конвейера и позволяет держать регулярный ритм апдейтов без раздувания продакшн-бюджета на каждый баннер. Ассеты между роликами переиспользуем, если персонаж или локация уже встречались.",
+      ],
+      en: [
+        "We work off the update calendar - a new character banner, a seasonal event, a collab - each needing a video in days, not weeks, or it ships after the audience's interest has already peaked.",
+        "We build character renders and cutscenes with AI - faster than a manual CGI pipeline, which lets you keep a regular update rhythm without inflating the production budget for every single banner. Assets get reused across videos whenever a character or location has appeared before.",
+      ],
+    },
+    bullets: {
+      ru: [
+        "AI-рендеры персонажей и катсцены вместо ручного CGI",
+        "Продакшн под календарь баннеров и сезонов",
+        "Синхронизация с датой релиза ивента",
+        "Переиспользование ассетов между роликами",
+      ],
+      en: [
+        "AI character renders and cutscenes instead of manual CGI",
+        "Production built around the banner and season calendar",
+        "Synced with the event's release date",
+        "Assets reused across videos",
+      ],
+    },
+    faq: [
+      {
+        q: {
+          ru: "Успеваете под жёсткий календарь обновлений?",
+          en: "Can you keep up with a tight update calendar?",
+        },
+        a: {
+          ru: "Да, обычно 3–5 дней на баннер персонажа при готовом арт-референсе - AI-продакшн держит этот темп, ручной CGI-конвейер так не успевает.",
+          en: "Yes - usually 3-5 days for a character banner once the art reference is ready. AI production keeps that pace; a manual CGI pipeline can't.",
+        },
+      },
+      {
+        q: { ru: "Работаете с уже существующим артом персонажей?", en: "Do you work from existing character art?" },
+        a: {
+          ru: "Да, это основной сценарий - генерируем рендер и анимацию по существующему арту и референсам, не придумывая персонажа заново.",
+          en: "Yes, that's the usual case - we generate the render and animation from existing art and references, not invent the character from scratch.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "ua-video-idle",
+    metaTitle: { ru: "UA-видео для idle и incremental игр | Nitroreel", en: "UA video for idle and incremental games | Nitroreel" },
+    metaDescription: {
+      ru: "Креативы для idle-игр: визуализация роста и прогрессии, хук на цифрах и апгрейдах, адаптации под Meta, Google Ads UA, TikTok.",
+      en: "Creatives for idle games: growth and progression made visible, a hook built on numbers and upgrades, adapted for Meta, Google Ads UA, TikTok.",
+    },
+    eyebrow: { ru: "UA-видео · Idle", en: "UA video · Idle" },
+    h1: { ru: "UA-видео для idle и incremental игр", en: "UA video for idle and incremental games" },
+    lead: {
+      ru: "В idle-играх продаёт не экшн, а сама прогрессия - цифры, апгрейды, «ещё один уровень» - и хук должен визуализировать рост за секунды, которых в самой игре обычно уходят часы.",
+      en: "Idle games don't sell action - they sell progression itself: numbers, upgrades, \"one more level\" - and the hook has to visualize growth in seconds that the game itself usually takes hours to deliver.",
+    },
+    intro: {
+      ru: [
+        "Строим хук вокруг ускоренной прогрессии: маленький бизнес/база/герой на глазах превращается в большой, апгрейд за апгрейдом, а цифры растут быстрее, чем в реальной игре. Это то, ради чего аудитория idle заходит - не сложность, а ощутимый рост.",
+        "Генерируем визуал через AI, чтобы показать десятки стадий прогрессии без ручной отрисовки каждой - от старта до эндгейм-визуала за один ролик. Тестируем, на каком этапе прогрессии обрывать хук, чтобы держать CTR, не проваливая механику целиком.",
+      ],
+      en: [
+        "We build the hook around accelerated progression: a small business/base/hero visibly grows into a big one, upgrade after upgrade, with the numbers climbing faster than the real game ever would. That's what the idle audience is there for - not difficulty, but visible growth.",
+        "We generate the visuals with AI to show dozens of progression stages without hand-drawing each one - from the start to an endgame visual in a single video. We test where in the progression to cut the hook to hold CTR without giving away the whole mechanic.",
+      ],
+    },
+    bullets: {
+      ru: [
+        "Хук на ускоренной прогрессии и цифрах",
+        "AI-генерация десятков стадий роста без ручной отрисовки",
+        "Адаптации под Meta, Google Ads UA, TikTok",
+        "Тест точки обрыва хука по CTR",
+      ],
+      en: [
+        "A hook built on accelerated progression and numbers",
+        "AI-generated growth stages without hand-drawn art for each one",
+        "Adaptations for Meta, Google Ads UA, TikTok",
+        "Hook cutoff point tested by CTR",
+      ],
+    },
+    faq: [
+      {
+        q: {
+          ru: "Не создаёт ли это завышенных ожиданий от реальной скорости прогрессии?",
+          en: "Doesn't this set unrealistic expectations for how fast the game actually progresses?",
+        },
+        a: {
+          ru: "Ускоряем показ, а не саму механику - показываем реальные стадии игры, просто в разы быстрее по времени в ролике. Это ожидаемая конвенция жанра, а не обман.",
+          en: "We speed up the presentation, not the mechanic itself - the stages shown are real, just compressed into the video's runtime. That's an expected genre convention, not a bait-and-switch.",
+        },
+      },
+      {
+        q: {
+          ru: "Подходит ли этот подход и для tycoon/merge-игр?",
+          en: "Does this approach work for tycoon/merge games too?",
+        },
+        a: {
+          ru: "Да, механика идентична по логике хука - визуализация роста и апгрейдов, только конкретные сцены и стадии подбираем под вашу игру.",
+          en: "Yes, the hook logic is identical - visualizing growth and upgrades - we just tailor the specific scenes and stages to your game.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "creative-testing-burst-test",
+    metaTitle: {
+      ru: "Burst-тест и постоянное тестирование креативов | Nitroreel",
+      en: "Burst testing and ongoing creative testing | Nitroreel",
+    },
+    metaDescription: {
+      ru: "Регулярный burst-тест хуков для UA: батч новых вариаций каждую неделю или две, отчёт по CTR/IPM, докрутка того, что держит CPI.",
+      en: "Regular hook burst-testing for UA: a fresh batch of variations every one or two weeks, a CTR/IPM report, doubling down on whatever holds CPI.",
+    },
+    eyebrow: { ru: "Услуга · Burst-тест", en: "Service · Burst testing" },
+    h1: { ru: "Burst-тест и постоянное тестирование креативов", en: "Burst testing and ongoing creative testing" },
+    lead: {
+      ru: "Один удачный батч выгорает за несколько недель - постоянный поток новых хуков нужен не разово, а на регулярной основе, иначе CPI начинает ползти вверх.",
+      en: "One good batch burns out in a few weeks - a steady stream of new hooks isn't a one-off, it's an ongoing need, or CPI starts creeping back up.",
+    },
+    intro: {
+      ru: [
+        "Вместо разового батча предлагаем регулярный цикл: каждую неделю или две - новый набор хуков по свежим гипотезам, burst-тест в сетях, отчёт по CTR/IPM/CPI и рекомендация, что докручивать, а что снимать с показов.",
+        "AI-продакшн делает такой ритм посильным по бюджету - генерируем визуал быстрее классической съёмки, поэтому можем позволить себе тестировать больше гипотез чаще, а не экономить на количестве вариаций из-за долгого продакшна.",
+      ],
+      en: [
+        "Instead of a one-off batch, we offer a regular cycle: every one or two weeks, a fresh set of hooks built on new hypotheses, burst-tested in the ad networks, with a CTR/IPM/CPI report and a recommendation on what to scale and what to pull.",
+        "AI production makes that rhythm affordable - we generate the visuals faster than a classic shoot, so we can afford to test more hypotheses more often instead of cutting variation count because production takes too long.",
+      ],
+    },
+    bullets: {
+      ru: [
+        "Новый батч хуков каждую 1-2 недели",
+        "Отчёт по CTR/IPM/CPI после каждого burst-теста",
+        "Рекомендации, что масштабировать, что снимать",
+        "AI-продакшн держит темп без роста бюджета",
+      ],
+      en: [
+        "A fresh hook batch every 1-2 weeks",
+        "A CTR/IPM/CPI report after every burst test",
+        "Recommendations on what to scale and what to pull",
+        "AI production keeps the pace without inflating budget",
+      ],
+    },
+    faq: [
+      {
+        q: {
+          ru: "Это подписка или разовые батчи по запросу?",
+          en: "Is this a subscription or one-off batches on request?",
+        },
+        a: {
+          ru: "Можно и так, и так - фиксированный регулярный цикл под ваш темп кампаний, или отдельные батчи, когда чувствуете, что текущие хуки выгорают.",
+          en: "Either works - a fixed regular cycle matched to your campaign pace, or standalone batches whenever you feel the current hooks are burning out.",
+        },
+      },
+      {
+        q: {
+          ru: "Как понять, что хук выгорел и пора тестировать новые?",
+          en: "How do you know a hook has burned out and it's time to test new ones?",
+        },
+        a: {
+          ru: "Обычно это видно по росту CPI и падению CTR на тех же связках через 2-4 недели показов - если делитесь метриками, подскажем момент, когда пора обновлять батч.",
+          en: "It usually shows up as rising CPI and falling CTR on the same combinations after 2-4 weeks of running - if you share your metrics, we can flag the moment it's time to refresh the batch.",
+        },
+      },
+    ],
+  },
 ];
 
 export function getSeoPage(slug: string): SeoPage | undefined {
