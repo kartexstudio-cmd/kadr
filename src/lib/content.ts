@@ -100,16 +100,16 @@ export const reels: ReelItem[] = [
     video: local("reel-03"),
   },
   {
+    id: "reel-01",
+    title: { ru: "Хук с раскрытием героя", en: "Hero-reveal hook" },
+    platform: "TikTok",
+    video: local("reel-01"),
+  },
+  {
     id: "reel-04",
     title: { ru: "Тап-хук на обещании дохода", en: "Tap hook built on an earnings promise" },
     platform: "Reels",
     video: local("reel-04"),
-  },
-  {
-    id: "reel-01",
-    title: { ru: "Хук за 1,5 секунды", en: "Hook in 1.5 seconds" },
-    platform: "Reels",
-    video: local("reel-01"),
   },
   {
     id: "reel-02",
