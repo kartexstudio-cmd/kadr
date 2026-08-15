@@ -31,6 +31,15 @@ export function QualityComparison({ t }: { t: Dictionary["quality"] }) {
                 sizes="(min-width: 640px) 40vw, 45vw"
                 className="object-cover"
               />
+              <span className="absolute left-3 top-3 rounded-full border border-white/15 bg-ink/70 px-2.5 py-1.5 backdrop-blur-sm">
+                <Image
+                  src="/brand/nitroreel-logo.png"
+                  alt="Nitroreel"
+                  width={100}
+                  height={34}
+                  className="h-4 w-auto"
+                />
+              </span>
             </div>
             <figcaption className="mt-3 flex items-center gap-2 text-xs font-semibold text-accent sm:text-sm">
               <span aria-hidden="true" className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
