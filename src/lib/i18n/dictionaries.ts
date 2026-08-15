@@ -50,8 +50,8 @@ const ru = {
       "Не передаём проект между подрядчиками: сценарий, продакшн, графика и адаптации под сети живут внутри одной студии.",
     priceItems: [
       { label: "Батч из 10 UA-креативов (15–30 сек + хук-нарезки 6–9 сек)", price: "от 180 000 ₽" },
-      { label: "Store-трейлер до 30 сек", price: "от 250 000 ₽" },
-      { label: "Cinematic-трейлер 45–60 сек", price: "от 400 000 ₽" },
+      { label: "Store-трейлер до 30 сек", price: "от 30 000 ₽" },
+      { label: "Cinematic-трейлер 45–60 сек", price: "от 75 000 ₽" },
       { label: "Анимация и CGI (2D/3D, 15–20 сек) - 1 ролик", price: "от 27 000 ₽" },
       { label: "Анимация и CGI - пакет из 3 роликов", price: "от 65 000 ₽" },
     ],
@@ -205,7 +205,7 @@ const ru = {
     items: [
       {
         q: "Сколько стоит проект?",
-        a: "Батч из 10 UA-креативов (15–30 сек, плюс хук-нарезки 6–9 сек для сплит-теста) - от 180 000 ₽. Store-трейлер до 30 секунд - от 250 000 ₽, cinematic-трейлер 45–60 секунд - от 400 000 ₽. Анимация и CGI (2D или 3D, 15–20 сек) - от 27 000 ₽ за ролик, пакет из 3 - от 65 000 ₽. AI-продакшн визуала дешевле классической съёмки - это и держит цену ниже рынка. Точную смету присылаем в течение суток после брифа.",
+        a: "Батч из 10 UA-креативов (15–30 сек, плюс хук-нарезки 6–9 сек для сплит-теста) - от 180 000 ₽. Store-трейлер до 30 секунд - от 30 000 ₽, cinematic-трейлер 45–60 секунд - от 75 000 ₽. Анимация и CGI (2D или 3D, 15–20 сек) - от 27 000 ₽ за ролик, пакет из 3 - от 65 000 ₽. AI-продакшн визуала дешевле классической съёмки - это и держит цену ниже рынка. Точную смету присылаем в течение суток после брифа.",
       },
       {
         q: "Какие сроки?",
@@ -358,8 +358,8 @@ const en: Dictionary = {
       "Nothing gets handed between vendors: script, production, graphics and network adaptations all live inside one studio.",
     priceItems: [
       { label: "A batch of 10 UA creatives (15–30 sec + 6–9 sec hook cutdowns)", price: "from €1,800" },
-      { label: "Store trailer up to 30 sec", price: "from €2,500" },
-      { label: "Cinematic trailer, 45–60 sec", price: "from €4,000" },
+      { label: "Store trailer up to 30 sec", price: "from €300" },
+      { label: "Cinematic trailer, 45–60 sec", price: "from €750" },
       { label: "Animation & CGI (2D/3D, 15–20 sec) - 1 video", price: "from €270" },
       { label: "Animation & CGI - pack of 3 videos", price: "from €650" },
     ],
@@ -513,7 +513,7 @@ const en: Dictionary = {
     items: [
       {
         q: "How much does a project cost?",
-        a: "A batch of ten UA creatives (15–30 sec, plus 6–9 sec hook cutdowns for split testing) starts at €1,800. A store trailer up to 30 seconds starts at €2,500, a 45–60 second cinematic trailer starts at €4,000. Animation & CGI (2D or 3D, 15–20 sec) starts at €270 per video, a pack of 3 starts at €650. AI visual production is cheaper than a classic shoot - that's what keeps the price below the market rate. You get an exact quote within a day of the brief.",
+        a: "A batch of ten UA creatives (15–30 sec, plus 6–9 sec hook cutdowns for split testing) starts at €1,800. A store trailer up to 30 seconds starts at €300, a 45–60 second cinematic trailer starts at €750. Animation & CGI (2D or 3D, 15–20 sec) starts at €270 per video, a pack of 3 starts at €650. AI visual production is cheaper than a classic shoot - that's what keeps the price below the market rate. You get an exact quote within a day of the brief.",
       },
       {
         q: "What are the timelines?",
