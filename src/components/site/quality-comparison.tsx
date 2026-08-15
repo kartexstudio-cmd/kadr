@@ -31,13 +31,13 @@ export function QualityComparison({ t }: { t: Dictionary["quality"] }) {
                 sizes="(min-width: 640px) 40vw, 45vw"
                 className="object-cover"
               />
-              <span className="absolute left-3 top-3 rounded-full border border-white/15 bg-ink/70 px-2.5 py-1.5 backdrop-blur-sm">
+              <span className="absolute right-1.5 top-1.5 rounded-full border border-white/15 bg-ink/70 px-1.5 py-1 backdrop-blur-sm sm:right-3 sm:top-3 sm:px-2.5 sm:py-1.5">
                 <Image
                   src="/brand/nitroreel-logo.png"
                   alt="Nitroreel"
                   width={100}
                   height={34}
-                  className="h-4 w-auto"
+                  className="h-2.5 w-auto sm:h-4"
                 />
               </span>
             </div>
