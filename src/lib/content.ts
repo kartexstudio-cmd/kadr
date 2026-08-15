@@ -94,6 +94,18 @@ export const works: WorkItem[] = [
 
 export const reels: ReelItem[] = [
   {
+    id: "reel-03",
+    title: { ru: "Хук с клиффхэнгером", en: "Cliffhanger hook" },
+    platform: "Shorts",
+    video: local("reel-03"),
+  },
+  {
+    id: "reel-04",
+    title: { ru: "Тап-хук на обещании дохода", en: "Tap hook built on an earnings promise" },
+    platform: "Reels",
+    video: local("reel-04"),
+  },
+  {
     id: "reel-01",
     title: { ru: "Хук за 1,5 секунды", en: "Hook in 1.5 seconds" },
     platform: "Reels",
@@ -101,21 +113,9 @@ export const reels: ReelItem[] = [
   },
   {
     id: "reel-02",
-    title: { ru: "AI-геймплей демо", en: "AI gameplay demo" },
+    title: { ru: "Хук через катсцену", en: "Cutscene-style hook" },
     platform: "TikTok",
     video: local("reel-02"),
-  },
-  {
-    id: "reel-03",
-    title: { ru: "Геймплей-нарезка под сторис", en: "Gameplay cutdown for stories" },
-    platform: "Shorts",
-    video: local("reel-03"),
-  },
-  {
-    id: "reel-04",
-    title: { ru: "Сборка хуков под сплит-тест", en: "Hook cutdown for a split test" },
-    platform: "Reels",
-    video: local("reel-04"),
   },
 ];
 

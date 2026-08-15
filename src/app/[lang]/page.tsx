@@ -79,8 +79,35 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         {/* Форматы и жанры */}
         <ClientsMarquee items={genres} label={t.genres.label} />
 
+        {/* Вертикальные форматы */}
+        <Section
+          id="reels"
+          eyebrow={t.reels.eyebrow}
+          title={t.reels.title}
+          subtitle={t.reels.subtitle}
+        >
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
+            {reels.map((item, index) => (
+              <Reveal key={item.id} delay={index * 0.07}>
+                <ReelCard
+                  source={item.video}
+                  title={item.title[lang]}
+                  platform={item.platform}
+                  playLabel={t.a11y.play}
+                />
+              </Reveal>
+            ))}
+          </div>
+        </Section>
+
         {/* Работы */}
-        <Section id="work" eyebrow={t.work.eyebrow} title={t.work.title} subtitle={t.work.subtitle}>
+        <Section
+          id="work"
+          eyebrow={t.work.eyebrow}
+          title={t.work.title}
+          subtitle={t.work.subtitle}
+          className="bg-ink-soft"
+        >
           <WorkGrid
             works={works}
             lang={lang}
@@ -96,7 +123,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           eyebrow={t.quality.eyebrow}
           title={t.quality.title}
           subtitle={t.quality.subtitle}
-          className="bg-ink-soft"
         >
           <QualityComparison t={t.quality} />
         </Section>
@@ -106,30 +132,9 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           eyebrow={t.fullService.eyebrow}
           title={t.fullService.title}
           subtitle={t.fullService.subtitle}
-        >
-          <FullService t={t.fullService} />
-        </Section>
-
-        {/* Вертикальные форматы */}
-        <Section
-          id="reels"
-          eyebrow={t.reels.eyebrow}
-          title={t.reels.title}
-          subtitle={t.reels.subtitle}
           className="bg-ink-soft"
         >
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
-            {reels.map((item, index) => (
-              <Reveal key={item.id} delay={index * 0.07}>
-                <ReelCard
-                  source={item.video}
-                  title={item.title[lang]}
-                  platform={item.platform}
-                  playLabel={t.a11y.play}
-                />
-              </Reveal>
-            ))}
-          </div>
+          <FullService t={t.fullService} />
         </Section>
 
         {/* Услуги */}
