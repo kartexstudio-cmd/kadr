@@ -32,11 +32,11 @@ const local = (name: string): VideoSource => ({
 export const works: WorkItem[] = [
   {
     id: "work-01",
-    client: "Vortex Play",
+    client: "Boneyard Studio",
     category: "ua",
-    title: { ru: "UA-кампания для гиперкэжуал-хита", en: "UA campaign for a hyper-casual hit" },
-    tag: { ru: "UA / Перформанс", en: "UA / Performance" },
-    metric: { ru: "CPI ниже плана на 34%", en: "CPI 34% below target" },
+    title: { ru: "UA-хук с сюжетным твистом", en: "UA hook with a story twist" },
+    tag: { ru: "UA / Хуки", en: "UA / Hooks" },
+    metric: { ru: "CTR 5,2% благодаря сюжетному хуку", en: "5.2% CTR from the story hook" },
     duration: "0:10",
     video: local("work-01"),
   },
