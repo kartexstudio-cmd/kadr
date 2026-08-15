@@ -103,10 +103,7 @@ const ru = {
       "У многих AI-студий результат легко узнать - смазанные детали, шум, пикселизация, будто видео пересжали десять раз. Мы прогоняем каждую генерацию через несколько итераций, пока не получим чистую картинку в Full HD, и только потом показываем клиенту.",
     typicalLabel: "Типичная AI-генерация",
     oursLabel: "Nitroreel - Full HD, без артефактов",
-    pairs: [
-      { typical: "/media/quality-typical-01.jpg", clean: "/media/work-02.jpg" },
-      { typical: "/media/quality-typical-02.jpg", clean: "/media/hero-loop.jpg" },
-    ],
+    pairs: [{ typical: "/media/quality-typical-01.jpg", clean: "/media/quality-clean-01.jpg" }],
   },
   fullService: {
     eyebrow: "Под ключ",
@@ -139,6 +136,7 @@ const ru = {
     title: "Под TikTok, Reels и Shorts",
     subtitle:
       "Каждый ролик собираем через AI-продакшн в 9:16 с новым хуком под TikTok, Reels и Shorts - тестируем в разы больше связок за тот же бюджет.",
+    newLabel: "Новое",
   },
   process: {
     eyebrow: "Процесс",
@@ -413,10 +411,7 @@ const en: Dictionary = {
       "You can usually spot AI-studio output at a glance - smeared detail, noise, pixelation, like the video got recompressed ten times. We run every generation through several iterations until the image is clean in Full HD, and only then show it to the client.",
     typicalLabel: "Typical AI generation",
     oursLabel: "Nitroreel - Full HD, no artifacts",
-    pairs: [
-      { typical: "/media/quality-typical-01.jpg", clean: "/media/work-02.jpg" },
-      { typical: "/media/quality-typical-02.jpg", clean: "/media/hero-loop.jpg" },
-    ],
+    pairs: [{ typical: "/media/quality-typical-01.jpg", clean: "/media/quality-clean-01.jpg" }],
   },
   fullService: {
     eyebrow: "Turnkey",
@@ -449,6 +444,7 @@ const en: Dictionary = {
     title: "Built for TikTok, Reels & Shorts",
     subtitle:
       "Every video is built with AI production in 9:16 with a new hook for TikTok, Reels and Shorts - we test far more combinations on the same budget.",
+    newLabel: "New",
   },
   process: {
     eyebrow: "Process",

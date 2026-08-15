@@ -63,7 +63,7 @@ export default async function ServicePage({
   const t = getDictionary(lang);
 
   const nav = [
-    { href: `/${lang}#work`, label: t.nav.work },
+    { href: `/${lang}#reels`, label: t.nav.work },
     { href: `/${lang}#services`, label: t.nav.services },
     { href: `/${lang}#process`, label: t.nav.process },
     { href: `/${lang}#faq`, label: t.nav.faq },
@@ -122,7 +122,7 @@ export default async function ServicePage({
                   {t.nav.contact}
                 </a>
                 <a
-                  href={`/${lang}#work`}
+                  href={`/${lang}#reels`}
                   className="rounded-full border border-line px-6 py-3.5 text-sm font-semibold transition-colors hover:border-accent/40"
                 >
                   {t.work.eyebrow}

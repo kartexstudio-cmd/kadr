@@ -10,11 +10,15 @@ export function ReelCard({
   title,
   platform,
   playLabel,
+  isNew,
+  newLabel,
 }: {
   source: VideoSource;
   title: string;
   platform: string;
   playLabel: string;
+  isNew?: boolean;
+  newLabel?: string;
 }) {
   const open = useLightbox();
   const preview = resolveVideo(source, { autoplay: true, muted: true, loop: true });
@@ -71,6 +75,12 @@ export function ReelCard({
       <span className="absolute left-3 top-3 rounded-full border border-white/15 bg-ink/60 px-2.5 py-1 text-[11px] font-medium backdrop-blur-sm">
         {platform}
       </span>
+
+      {isNew && newLabel ? (
+        <span className="absolute right-3 top-3 rounded-full bg-accent px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-accent-ink">
+          {newLabel}
+        </span>
+      ) : null}
 
       <span className="absolute inset-x-3 bottom-3 text-left font-display text-sm font-bold leading-tight">
         {title}

@@ -21,6 +21,7 @@ export type ReelItem = {
   title: Localized;
   platform: string;
   video: VideoSource;
+  isNew?: boolean;
 };
 
 const local = (name: string): VideoSource => ({
@@ -98,12 +99,14 @@ export const reels: ReelItem[] = [
     title: { ru: "Хук с клиффхэнгером", en: "Cliffhanger hook" },
     platform: "Shorts",
     video: local("reel-03"),
+    isNew: true,
   },
   {
     id: "reel-01",
     title: { ru: "Хук с раскрытием героя", en: "Hero-reveal hook" },
     platform: "TikTok",
     video: local("reel-01"),
+    isNew: true,
   },
   {
     id: "reel-04",

@@ -12,9 +12,8 @@ import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { ServiceIcon } from "@/components/ui/service-icons";
 import { LightboxProvider } from "@/components/video/lightbox";
-import { WorkGrid } from "@/components/video/work-grid";
 import { ReelCard } from "@/components/video/reel-card";
-import { genres, reels, works } from "@/lib/content";
+import { genres, reels } from "@/lib/content";
 import { defaultLocale, isLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { seoPages } from "@/lib/seo-pages";
@@ -27,7 +26,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
   const t = getDictionary(lang);
 
   const nav = [
-    { href: "#work", label: t.nav.work },
+    { href: "#reels", label: t.nav.work },
     { href: "#services", label: t.nav.services },
     { href: "#process", label: t.nav.process },
     { href: "#faq", label: t.nav.faq },
@@ -94,14 +93,17 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                   title={item.title[lang]}
                   platform={item.platform}
                   playLabel={t.a11y.play}
+                  isNew={item.isNew}
+                  newLabel={t.reels.newLabel}
                 />
               </Reveal>
             ))}
           </div>
         </Section>
 
-        {/* Работы */}
-        <Section
+        {/* Работы - временно скрыто по просьбе владельца 2026-08-15,
+        текущие кейсы не устраивают, вернуть после замены креативов */}
+        {/* <Section
           id="work"
           eyebrow={t.work.eyebrow}
           title={t.work.title}
@@ -116,13 +118,14 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             resultLabel={t.work.result}
             playLabel={t.a11y.play}
           />
-        </Section>
+        </Section> */}
 
         {/* Качество картинки */}
         <Section
           eyebrow={t.quality.eyebrow}
           title={t.quality.title}
           subtitle={t.quality.subtitle}
+          className="bg-ink-soft"
         >
           <QualityComparison t={t.quality} />
         </Section>
