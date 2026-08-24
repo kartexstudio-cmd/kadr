@@ -7,10 +7,12 @@ export function Magnetic({
   children,
   strength = 0.35,
   className,
+  block = false,
 }: {
   children: ReactNode;
   strength?: number;
   className?: string;
+  block?: boolean;
 }) {
   const reduced = useReducedMotion();
   const ref = useRef<HTMLDivElement>(null);
@@ -25,7 +27,7 @@ export function Magnetic({
     <motion.div
       ref={ref}
       style={{ x: springX, y: springY }}
-      className={`inline-flex ${className ?? ""}`}
+      className={`${block ? "block w-full" : "inline-flex"} ${className ?? ""}`}
       onPointerMove={(event) => {
         const box = ref.current?.getBoundingClientRect();
         if (!box) return;

@@ -24,12 +24,12 @@ export const seoPages: SeoPage[] = [
   {
     slug: "ua-video-hypercasual",
     metaTitle: {
-      ru: "UA-видео для hypercasual игр - батч хуков за 5 дней | Nitroreel",
-      en: "UA video for hyper-casual games - a batch of hooks in 5 days | Nitroreel",
+      ru: "UA-видео для hypercasual игр - батч хуков за 10 дней | Nitroreel",
+      en: "UA video for hyper-casual games - a batch of hooks in 10 days | Nitroreel",
     },
     metaDescription: {
-      ru: "Продакшн UA-креативов для hypercasual: хуки, гипотезы, burst-тест в сетях. Батч из 10 роликов за 5 рабочих дней.",
-      en: "UA creative production for hyper-casual: hooks, hypotheses, a burst test in ad networks. Ten videos in five working days.",
+      ru: "Продакшн UA-креативов для hypercasual: хуки, гипотезы, burst-тест в сетях. Батч из 10 роликов за 10 рабочих дней, экспресс за 5.",
+      en: "UA creative production for hyper-casual: hooks, hypotheses, a burst test in ad networks. Ten videos in 10 working days, rush in 5.",
     },
     eyebrow: { ru: "UA-видео · Hypercasual", en: "UA video · Hyper-casual" },
     h1: { ru: "UA-видео для hypercasual игр", en: "UA video for hyper-casual games" },

@@ -2,13 +2,12 @@
 
 import { motion, useReducedMotion } from "motion/react";
 import { HeroLoop } from "@/components/video/hero-loop";
-import { useLightbox } from "@/components/video/lightbox";
 import { Magnetic } from "@/components/ui/magnetic";
+import { CountUp } from "@/components/ui/count-up";
 import { heroVideo } from "@/lib/content";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 
 export function Hero({ t, scrollHint }: { t: Dictionary["hero"]; scrollHint: string }) {
-  const open = useLightbox();
   const reduced = useReducedMotion();
 
   const rise = (delay: number) =>
@@ -89,15 +88,12 @@ export function Hero({ t, scrollHint }: { t: Dictionary["hero"]; scrollHint: str
           </Magnetic>
 
           <Magnetic strength={0.25}>
-            <button
-              type="button"
-              onClick={() =>
-                open({ source: heroVideo, title: t.reelLabel, aspect: "16/9" })
-              }
+            <a
+              href="#reels"
               className="inline-flex items-center gap-3 rounded-full border border-line bg-ink/40 px-6 py-3.5 font-medium backdrop-blur-sm transition hover:border-accent/60"
             >
               {t.secondary}
-            </button>
+            </a>
           </Magnetic>
         </motion.div>
 
@@ -109,7 +105,9 @@ export function Hero({ t, scrollHint }: { t: Dictionary["hero"]; scrollHint: str
             <div key={stat.label}>
               <dt className="sr-only">{stat.label}</dt>
               <dd>
-                <span className="block font-display text-3xl font-extrabold">{stat.value}</span>
+                <span className="block font-display text-3xl font-extrabold">
+                  <CountUp value={stat.value} />
+                </span>
                 <span className="mt-1 block text-sm text-muted">{stat.label}</span>
               </dd>
             </div>

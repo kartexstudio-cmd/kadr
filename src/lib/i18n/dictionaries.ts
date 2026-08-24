@@ -32,8 +32,7 @@ const ru = {
     subtitle:
       "UA-креативы, трейлеры и cinematic-ролики для мобильных игр. Визуал собираем через AI-продакшн - это дешевле и быстрее классической съёмки, а хуков можно тестировать в разы больше на тот же бюджет.",
     primary: "Обсудить проект",
-    secondary: "Смотреть шоурил",
-    reelLabel: "Шоурил 2026",
+    secondary: "Смотреть портфолио",
     stats: [
       { value: "1000+", label: "креативов в год" },
       { value: "48 ч", label: "до первого теста хуков" },
@@ -54,6 +53,7 @@ const ru = {
       { label: "Cinematic-трейлер 45–60 сек", price: "от 75 000 ₽" },
       { label: "Анимация и CGI (2D/3D, 15–20 сек) - 1 ролик", price: "от 27 000 ₽" },
       { label: "Анимация и CGI - пакет из 3 роликов", price: "от 65 000 ₽" },
+      { label: "Срочность - батч за 5 дней вместо 10", price: "+70 000 ₽" },
     ],
     priceNote: "Точная смета - после брифа.",
     batchDetails: {
@@ -187,8 +187,8 @@ const ru = {
         metric: "Срок",
         classicValue: "2–3 недели",
         classicWidth: 100,
-        aiValue: "3–5 дней",
-        aiWidth: 20,
+        aiValue: "10 дней",
+        aiWidth: 55,
       },
       {
         metric: "Хуков в батче",
@@ -209,7 +209,7 @@ const ru = {
       },
       {
         q: "Какие сроки?",
-        a: "Батч UA-креативов - 3–5 рабочих дней, успевает в тот же спринт burst-теста. Трейлер с 3D-рендерами - от 1 до 3 недель в зависимости от объёма сцен, AI-продакшн заметно быстрее классического конвейера.",
+        a: "Батч UA-креативов - 10 рабочих дней. Нужно быстрее - есть экспресс-опция за 5 дней с доплатой за срочность (+70 000 ₽). Трейлер с 3D-рендерами - от 1 до 3 недель в зависимости от объёма сцен.",
       },
       {
         q: "С какими жанрами работаете?",
@@ -226,6 +226,10 @@ const ru = {
       {
         q: "Сколько правок входит в стоимость?",
         a: "Два круга правок на этапе сценария и два на этапе монтажа. Дальше - по часовой ставке, но до этого доходит редко.",
+      },
+      {
+        q: "Как происходит оплата?",
+        a: "Работаем по 100% предоплате - оплата вносится до старта продакшна, постоплаты нет. Мы несём ответственность за срок, указанный в брифе; в случае форс-мажора (болезнь ключевого исполнителя на проекте, сбои на стороне AI-сервисов и т.п.) заранее предупреждаем и предлагаем новый срок или компенсацию.",
       },
       {
         q: "Кому принадлежат исходники?",
@@ -340,8 +344,7 @@ const en: Dictionary = {
     subtitle:
       "UA creatives, trailers and cinematic videos for mobile games. We build the visuals with AI production - cheaper and faster than a classic shoot, so we can test far more hooks on the same budget.",
     primary: "Start a project",
-    secondary: "Watch showreel",
-    reelLabel: "Showreel 2026",
+    secondary: "Watch portfolio",
     stats: [
       { value: "1000+", label: "creatives per year" },
       { value: "48 h", label: "to the first hook test" },
@@ -362,6 +365,7 @@ const en: Dictionary = {
       { label: "Cinematic trailer, 45–60 sec", price: "from €750" },
       { label: "Animation & CGI (2D/3D, 15–20 sec) - 1 video", price: "from €270" },
       { label: "Animation & CGI - pack of 3 videos", price: "from €650" },
+      { label: "Rush - batch in 5 days instead of 10", price: "+€700" },
     ],
     priceNote: "Exact quote after the brief.",
     batchDetails: {
@@ -495,8 +499,8 @@ const en: Dictionary = {
         metric: "Timeline",
         classicValue: "2–3 weeks",
         classicWidth: 100,
-        aiValue: "3–5 days",
-        aiWidth: 20,
+        aiValue: "10 days",
+        aiWidth: 55,
       },
       {
         metric: "Hooks per batch",
@@ -517,7 +521,7 @@ const en: Dictionary = {
       },
       {
         q: "What are the timelines?",
-        a: "A batch of UA creatives takes three to five working days - fits into the same burst-test sprint. A trailer with 3D renders takes one to three weeks depending on scene count - AI production is noticeably faster than a classic pipeline.",
+        a: "A batch of UA creatives takes 10 working days. Need it faster - a rush option gets it done in 5 days for a +€700 fee. A trailer with 3D renders takes one to three weeks depending on scene count.",
       },
       {
         q: "What genres do you work with?",
@@ -534,6 +538,10 @@ const en: Dictionary = {
       {
         q: "How many revisions are included?",
         a: "Two rounds at script stage and two at edit stage. Anything beyond that is hourly, but it rarely comes to that.",
+      },
+      {
+        q: "How does payment work?",
+        a: "We work on 100% prepayment - it's due before production starts, there's no pay-later option. We're accountable for the timeline stated in the brief; in genuine force-majeure cases (illness of a key person on the project, an AI-service outage, etc.) we notify you in advance and offer either a new timeline or compensation.",
       },
       {
         q: "Who owns the source files?",

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { resolveVideo, type VideoSource } from "@/lib/video";
 import { useLightbox } from "@/components/video/lightbox";
+import { Magnetic } from "@/components/ui/magnetic";
 
 export function WorkCard({
   source,
@@ -30,6 +31,7 @@ export function WorkCard({
 
   return (
     <figure className="group">
+      <Magnetic block strength={0.12}>
       <button
         type="button"
         onClick={() => open({ source, title, subtitle: client, aspect: "16/9" })}
@@ -56,6 +58,7 @@ export function WorkCard({
           {duration}
         </span>
       </button>
+      </Magnetic>
 
       <figcaption className="mt-4 space-y-1.5">
         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">{client}</p>

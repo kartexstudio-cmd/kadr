@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { resolveVideo, type VideoSource } from "@/lib/video";
 import { useLightbox } from "@/components/video/lightbox";
+import { Magnetic } from "@/components/ui/magnetic";
 
 export function ReelCard({
   source,
@@ -41,6 +42,7 @@ export function ReelCard({
   }, []);
 
   return (
+    <Magnetic block strength={0.12}>
     <button
       type="button"
       onClick={() => open({ source, title, subtitle: platform, aspect: "9/16" })}
@@ -86,5 +88,6 @@ export function ReelCard({
         {title}
       </span>
     </button>
+    </Magnetic>
   );
 }
