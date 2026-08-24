@@ -279,7 +279,7 @@ const ru = {
         email: "Проверьте адрес почты",
         message: "Опишите задачу - минимум 10 символов",
         consent: "Без согласия мы не сможем связаться с вами",
-        generic: "Не получилось отправить. Напишите нам на почту или в Telegram.",
+        generic: "Не получилось отправить. Напишите нам на почту.",
         rateLimit: "Слишком много попыток. Попробуйте через минуту.",
       },
     },
@@ -304,9 +304,9 @@ const ru = {
       "Привет! Отвечу на вопросы про сроки, стоимость, жанры и процесс работы. Для расчёта по конкретному проекту лучше оставить заявку в форме ниже.",
     thinking: "Печатает…",
     errorFallback:
-      "Не получилось получить ответ. Напишите нам на почту или в Telegram - ответим лично.",
+      "Не получилось получить ответ. Оставьте заявку в форме ниже или напишите нам на почту - ответим лично.",
     rateLimitFallback:
-      "Слишком много вопросов подряд. Попробуйте через минуту или напишите в Telegram.",
+      "Слишком много вопросов подряд. Попробуйте через минуту или оставьте заявку в форме ниже.",
   },
 };
 
@@ -590,7 +590,7 @@ const en: Dictionary = {
         email: "Check the email address",
         message: "Describe the project - at least 10 characters",
         consent: "We cannot contact you without your consent",
-        generic: "Sending failed. Please email us or reach out on Telegram.",
+        generic: "Sending failed. Please email us.",
         rateLimit: "Too many attempts. Please try again in a minute.",
       },
     },
@@ -614,8 +614,8 @@ const en: Dictionary = {
     greeting:
       "Hi! I can answer questions about timelines, pricing, genres and how we work. For an exact quote on your project, it's best to use the form below.",
     thinking: "Typing…",
-    errorFallback: "Couldn't get a reply. Please email us or reach out on Telegram - we'll answer personally.",
-    rateLimitFallback: "Too many questions in a row. Try again in a minute or message us on Telegram.",
+    errorFallback: "Couldn't get a reply. Leave a request in the form below or email us - we'll answer personally.",
+    rateLimitFallback: "Too many questions in a row. Try again in a minute or leave a request in the form below.",
   },
 };
 

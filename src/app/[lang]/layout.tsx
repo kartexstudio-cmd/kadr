@@ -6,6 +6,7 @@ import "@/app/globals.css";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { defaultLocale, isLocale, locales } from "@/lib/i18n/config";
 import { site } from "@/lib/site";
+import { GoogleAdsTag } from "@/components/site/google-ads-tag";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
@@ -75,6 +76,7 @@ export default async function LangLayout({
         {children}
         <Analytics />
         <SpeedInsights />
+        <GoogleAdsTag />
       </body>
     </html>
   );

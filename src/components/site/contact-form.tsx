@@ -1,11 +1,24 @@
 "use client";
 
-import { useActionState, useId } from "react";
+import { useActionState, useEffect, useId } from "react";
 import { submitLead, type LeadErrorCode, type LeadState } from "@/app/actions";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 
 const initialState: LeadState = { status: "idle" };
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+function reportConversion() {
+  const id = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
+  const label = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL;
+  if (!id || !label || typeof window.gtag !== "function") return;
+  window.gtag("event", "conversion", { send_to: `${id}/${label}` });
+}
 
 const fieldClass =
   "w-full rounded-xl border border-line bg-ink-soft px-4 py-3 text-sm text-fg placeholder:text-muted/70 transition-colors focus:border-accent focus:outline-none aria-[invalid=true]:border-red-400";
@@ -17,6 +30,10 @@ export function ContactForm({ lang, t }: { lang: Locale; t: Dictionary["contact"
   const errors: LeadErrorCode[] = state.status === "error" ? state.errors : [];
   const has = (code: LeadErrorCode) => errors.includes(code);
   const field = (name: string) => `${uid}-${name}`;
+
+  useEffect(() => {
+    if (state.status === "success") reportConversion();
+  }, [state.status]);
 
   if (state.status === "success") {
     return (
