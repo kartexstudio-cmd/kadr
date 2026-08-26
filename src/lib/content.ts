@@ -99,14 +99,12 @@ export const reels: ReelItem[] = [
     title: { ru: "Хук с клиффхэнгером", en: "Cliffhanger hook" },
     platform: "Shorts",
     video: local("reel-03"),
-    isNew: true,
   },
   {
     id: "reel-01",
     title: { ru: "Хук с раскрытием героя", en: "Hero-reveal hook" },
     platform: "TikTok",
     video: local("reel-01"),
-    isNew: true,
   },
   {
     id: "reel-04",
@@ -119,6 +117,13 @@ export const reels: ReelItem[] = [
     title: { ru: "Хук через катсцену", en: "Cutscene-style hook" },
     platform: "TikTok",
     video: local("reel-02"),
+  },
+  {
+    id: "reel-05",
+    title: { ru: "Хук через персонажа-маскота", en: "Mascot-character hook" },
+    platform: "Reels",
+    video: local("reel-05"),
+    isNew: true,
   },
 ];
 

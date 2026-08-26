@@ -79,6 +79,23 @@ export async function submitLead(_prev: LeadState, formData: FormData): Promise<
   return { status: "success" };
 }
 
+// Google Ads (и любая другая реклама с UTM-меткой в Final URL) передаёт источник
+// через query-параметры лендинга — извлекаем их из referer, отдельного трекинга не нужно.
+function parseUtm(referer: string | null) {
+  if (!referer) return {};
+  try {
+    const params = new URL(referer).searchParams;
+    return {
+      utm_source: params.get("utm_source"),
+      utm_medium: params.get("utm_medium"),
+      utm_campaign: params.get("utm_campaign"),
+      utm_term: params.get("utm_term"),
+    };
+  } catch {
+    return {};
+  }
+}
+
 async function saveLead(
   lead: LeadNotification,
   meta: { referer: string | null; userAgent: string | null },
@@ -89,7 +106,7 @@ async function saveLead(
     return "skipped";
   }
 
-  const { error } = await supabase.from("leads").insert({
+  const base = {
     name: lead.name,
     email: lead.email,
     company: lead.company || null,
@@ -98,9 +115,23 @@ async function saveLead(
     locale: lead.locale,
     referer: meta.referer,
     user_agent: meta.userAgent,
-  });
+  };
+
+  const { error } = await supabase.from("leads").insert({ ...base, ...parseUtm(meta.referer) });
 
   if (error) {
+    // 42703 = колонка не существует: миграция utm_* из leads.sql ещё не выполнена
+    // в проде. Заявка всё равно не должна теряться — сохраняем без UTM-полей.
+    if (error.code === "42703") {
+      console.warn("[leads] utm_* колонки ещё не созданы в Supabase, сохраняю без них");
+      const retry = await supabase.from("leads").insert(base);
+      if (retry.error) {
+        console.error("[leads] insert failed (retry without utm_*)", retry.error);
+        return "failed";
+      }
+      return "ok";
+    }
+
     console.error("[leads] insert failed", error);
     return "failed";
   }
