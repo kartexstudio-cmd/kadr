@@ -85,7 +85,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           title={t.reels.title}
           subtitle={t.reels.subtitle}
         >
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5 md:gap-5">
             {reels.map((item, index) => (
               <Reveal key={item.id} delay={index * 0.07}>
                 <ReelCard
