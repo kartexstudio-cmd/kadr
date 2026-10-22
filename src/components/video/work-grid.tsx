@@ -70,7 +70,7 @@ export function WorkGrid({
               client={item.client}
               title={item.title[lang]}
               tag={item.tag[lang]}
-              metric={item.metric[lang]}
+              metric={item.metric?.[lang]}
               duration={item.duration}
               resultLabel={resultLabel}
               playLabel={playLabel}

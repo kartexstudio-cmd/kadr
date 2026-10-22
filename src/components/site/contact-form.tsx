@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useEffect, useId } from "react";
+import { useActionState, useEffect, useId, useRef } from "react";
 import { submitLead, type LeadErrorCode, type LeadState } from "@/app/actions";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
@@ -34,6 +34,21 @@ export function ContactForm({ lang, t }: { lang: Locale; t: Dictionary["contact"
   useEffect(() => {
     if (state.status === "success") reportConversion();
   }, [state.status]);
+
+  // Кнопка «бесплатный тест» в хиро ведёт на #test: подставляем заготовку письма, если поле пустое.
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+  useEffect(() => {
+    const prefill = () => {
+      const el = messageRef.current;
+      if (window.location.hash !== "#test" || !el || el.value.trim()) return;
+      el.value = t.testPrefill;
+      el.focus({ preventScroll: true });
+      el.setSelectionRange(el.value.length, el.value.length);
+    };
+    prefill();
+    window.addEventListener("hashchange", prefill);
+    return () => window.removeEventListener("hashchange", prefill);
+  }, [t.testPrefill]);
 
   if (state.status === "success") {
     return (
@@ -141,6 +156,7 @@ export function ContactForm({ lang, t }: { lang: Locale; t: Dictionary["contact"
           {t.message}
         </label>
         <textarea
+          ref={messageRef}
           id={field("message")}
           name="message"
           rows={4}

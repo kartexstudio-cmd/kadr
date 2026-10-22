@@ -250,11 +250,11 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
         {/* Цифры */}
         <Section title={t.stats.title}>
-          <dl className="grid grid-cols-2 gap-8 lg:grid-cols-4">
+          <dl className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
             {t.stats.items.map((stat, index) => (
               <Reveal key={stat.label} delay={index * 0.06}>
                 <div className="border-t border-line pt-5">
-                  <dt className="text-sm text-muted">{stat.label}</dt>
+                  <dt className="min-h-15 text-sm text-muted">{stat.label}</dt>
                   <dd className="mt-2 font-display text-[clamp(2.25rem,5vw,3.5rem)] font-extrabold leading-none">
                     {stat.value}
                   </dd>
@@ -361,7 +361,9 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
               </div>
             </div>
 
-            <ContactForm lang={lang} t={t.contact.form} />
+            <div id="test" className="scroll-mt-24">
+              <ContactForm lang={lang} t={t.contact.form} />
+            </div>
           </div>
         </Section>
       </main>

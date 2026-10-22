@@ -80,8 +80,17 @@ export function Hero({ t, scrollHint }: { t: Dictionary["hero"]; scrollHint: str
         <motion.div {...rise(0.24)} className="mt-10 flex flex-wrap items-center gap-4">
           <Magnetic>
             <a
-              href="#contact"
+              href="#test"
               className="rounded-full bg-accent px-7 py-3.5 font-semibold text-accent-ink transition hover:brightness-110"
+            >
+              {t.testOffer}
+            </a>
+          </Magnetic>
+
+          <Magnetic strength={0.25}>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-3 rounded-full border border-line bg-ink/40 px-6 py-3.5 font-medium backdrop-blur-sm transition hover:border-accent/60"
             >
               {t.primary}
             </a>

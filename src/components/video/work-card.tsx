@@ -17,10 +17,10 @@ export function WorkCard({
   priority,
 }: {
   source: VideoSource;
-  client: string;
+  client?: string;
   title: string;
   tag: string;
-  metric: string;
+  metric?: string;
   duration: string;
   resultLabel: string;
   playLabel: string;
@@ -61,12 +61,14 @@ export function WorkCard({
       </Magnetic>
 
       <figcaption className="mt-4 space-y-1.5">
-        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">{client}</p>
+        {client && <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">{client}</p>}
         <h3 className="font-display text-lg font-bold leading-snug">{title}</h3>
-        <p className="text-sm text-accent">
-          <span className="text-muted">{resultLabel}: </span>
-          {metric}
-        </p>
+        {metric && (
+          <p className="text-sm text-accent">
+            <span className="text-muted">{resultLabel}: </span>
+            {metric}
+          </p>
+        )}
       </figcaption>
     </figure>
   );

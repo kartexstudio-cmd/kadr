@@ -33,8 +33,9 @@ const ru = {
       "UA-креативы, трейлеры и cinematic-ролики для мобильных игр. Визуал собираем через AI-продакшн - это дешевле и быстрее классической съёмки, а хуков можно тестировать в разы больше на тот же бюджет.",
     primary: "Обсудить проект",
     secondary: "Смотреть портфолио",
+    testOffer: "Бесплатный тест 10 сек",
     stats: [
-      { value: "1000+", label: "креативов в год" },
+      { value: "350+", label: "креативов в год" },
       { value: "48 ч", label: "до первого теста хуков" },
       { value: "30+", label: "игровых тайтлов" },
     ],
@@ -87,7 +88,7 @@ const ru = {
   },
   work: {
     eyebrow: "Работы",
-    title: "Креативы, которые снизили CPI",
+    title: "Примеры наших креативов",
     subtitle: "Выберите проект - видео откроется в плеере со звуком.",
     filterAll: "Все",
     filters: {
@@ -163,10 +164,11 @@ const ru = {
   stats: {
     title: "Цифры за 2025 год",
     items: [
-      { value: "1000+", label: "выпущенных креативов" },
-      { value: "38%", label: "среднее снижение CPI" },
-      { value: "3,4×", label: "медианный ROAS" },
+      { value: "350+", label: "выпущенных креативов" },
       { value: "94%", label: "клиентов возвращаются" },
+      { value: "48 ч", label: "до первых креативов" },
+      { value: "20+", label: "вариаций хука в одном батче" },
+      { value: "≈2×", label: "дешевле классического продакшна" },
     ],
   },
   comparison: {
@@ -203,6 +205,10 @@ const ru = {
     eyebrow: "Вопросы",
     title: "Частые вопросы",
     items: [
+      {
+        q: "Можно сначала попробовать?",
+        a: "Да. По запросу бесплатно делаем тестовый креатив до 10 секунд для вашей игры - за 48 часов, без обязательств. Подойдёт в ваших тестах - обсуждаем батч, нет - ролик остаётся у вас. Напишите в форму ниже название игры и ссылку на стор.",
+      },
       {
         q: "Сколько стоит проект?",
         a: "Батч из 10 UA-креативов (15–30 сек, плюс хук-нарезки 6–9 сек для сплит-теста) - от 180 000 ₽. Store-трейлер до 30 секунд - от 30 000 ₽, cinematic-трейлер 45–60 секунд - от 75 000 ₽. Анимация и CGI (2D или 3D, 15–20 сек) - от 27 000 ₽ за ролик, пакет из 3 - от 65 000 ₽. AI-продакшн визуала дешевле классической съёмки - это и держит цену ниже рынка. Точную смету присылаем в течение суток после брифа.",
@@ -269,6 +275,7 @@ const ru = {
       ],
       message: "Задача",
       messagePlaceholder: "Что за игра, какая цель у ролика (UA / трейлер), есть ли дедлайн",
+      testPrefill: "Хочу бесплатный тест: 10 секунд креатива для нашей игры.\nИгра и ссылка на стор: ",
       consent: "Согласен на обработку персональных данных",
       submit: "Отправить заявку",
       submitting: "Отправляем…",
@@ -345,8 +352,9 @@ const en: Dictionary = {
       "UA creatives, trailers and cinematic videos for mobile games. We build the visuals with AI production - cheaper and faster than a classic shoot, so we can test far more hooks on the same budget.",
     primary: "Start a project",
     secondary: "Watch portfolio",
+    testOffer: "Free 10-sec test",
     stats: [
-      { value: "1000+", label: "creatives per year" },
+      { value: "350+", label: "creatives per year" },
       { value: "48 h", label: "to the first hook test" },
       { value: "30+", label: "game titles" },
     ],
@@ -399,7 +407,7 @@ const en: Dictionary = {
   },
   work: {
     eyebrow: "Work",
-    title: "Creatives that brought CPI down",
+    title: "Examples of our creatives",
     subtitle: "Pick a project - the video opens in a player with sound.",
     filterAll: "All",
     filters: {
@@ -475,10 +483,11 @@ const en: Dictionary = {
   stats: {
     title: "2025 in numbers",
     items: [
-      { value: "1000+", label: "creatives delivered" },
-      { value: "38%", label: "average CPI reduction" },
-      { value: "3.4×", label: "median ROAS" },
+      { value: "350+", label: "creatives delivered" },
       { value: "94%", label: "clients come back" },
+      { value: "48 h", label: "to the first creatives" },
+      { value: "20+", label: "hook variations per batch" },
+      { value: "≈2×", label: "cheaper than classic production" },
     ],
   },
   comparison: {
@@ -515,6 +524,10 @@ const en: Dictionary = {
     eyebrow: "FAQ",
     title: "Frequently asked",
     items: [
+      {
+        q: "Can we try before we commit?",
+        a: "Yes. On request we make a free test creative of up to 10 seconds for your game - within 48 hours, no strings attached. If it holds up in your tests, we talk about a batch; if not, you keep the video. Drop the game name and store link in the form below.",
+      },
       {
         q: "How much does a project cost?",
         a: "A batch of ten UA creatives (15–30 sec, plus 6–9 sec hook cutdowns for split testing) starts at €1,800. A store trailer up to 30 seconds starts at €300, a 45–60 second cinematic trailer starts at €750. Animation & CGI (2D or 3D, 15–20 sec) starts at €270 per video, a pack of 3 starts at €650. AI visual production is cheaper than a classic shoot - that's what keeps the price below the market rate. You get an exact quote within a day of the brief.",
@@ -580,6 +593,7 @@ const en: Dictionary = {
       ],
       message: "Project",
       messagePlaceholder: "What's the game, what should the video achieve (UA / trailer), any deadline",
+      testPrefill: "I'd like the free test: a 10-second creative for our game.\nGame and store link: ",
       consent: "I agree to the processing of my personal data",
       submit: "Send request",
       submitting: "Sending…",
