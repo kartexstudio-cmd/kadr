@@ -18,9 +18,71 @@ export type SeoPage = {
   intro: LocalizedList;
   bullets: LocalizedList;
   faq: SeoFaqItem[];
+  /** Скрытая страница: не в sitemap, не в списке услуг, noindex. Ссылка только в письмах. */
+  hidden?: boolean;
 };
 
 export const seoPages: SeoPage[] = [
+  {
+    slug: "for-agencies",
+    hidden: true,
+    metaTitle: {
+      ru: "White-label продакшн AI-креативов для UA-агентств | Nitroreel",
+      en: "White-label AI creative production for UA agencies | Nitroreel",
+    },
+    metaDescription: {
+      ru: "Перелив мощностей для агентств: AI-видеокреативы для мобильных игр под вашим брендом, €150–200 за ролик, 48 часов, NDA.",
+      en: "Overflow capacity for agencies: AI video creatives for mobile games under your brand, €150–200 per video, 48 hours, NDA.",
+    },
+    eyebrow: { ru: "Для агентств · White-label", en: "For agencies · White-label" },
+    h1: { ru: "Перелив продакшна для UA-агентств", en: "Overflow production for UA agencies" },
+    lead: {
+      ru: "Когда клиенту нужно 30 вариаций к пятнице, а у вас два моушн-дизайнера - отдаёте нам. Под вашим брендом, без упоминания Nitroreel.",
+      en: "When a client needs 30 variations by Friday and you have two motion designers - hand it to us. Under your brand, Nitroreel never mentioned.",
+    },
+    intro: {
+      ru: [
+        "Делаем UA-видеокреативы для мобильных игр через AI-продакшн: визуал генерируем, монтируем и сводим звук сами. Это даёт скорость и цену, которые не получить классическим рендером: ролик 15–30 секунд за €150–200, хук-вариация за €50, первая партия за 48 часов. Вы продаёте клиенту по своему прайсу.",
+        "Работаем как ваша внешняя команда: бриф и исходники - от вас, итерации по данным - по вашим CTR/IPM, права на ролики - у вас и вашего клиента бессрочно. NDA подписываем до первого файла. Счета - на агентство.",
+      ],
+      en: [
+        "We produce UA video creatives for mobile games with AI production: visuals are generated, edited and sound-mixed in-house. That gives speed and pricing a classic render can't match: a 15–30 second video for €150–200, a hook variation for €50, first batch in 48 hours. You resell at your own rate.",
+        "We work as your external team: brief and source assets come from you, iterations follow your CTR/IPM data, and your client keeps the rights to the videos indefinitely. NDA signed before the first file. Invoices go to the agency.",
+      ],
+    },
+    bullets: {
+      ru: [
+        "€150–200 за ролик 15–30 с в 9:16, 1:1 и 16:9; €50 за хук-вариацию; срочность 24 ч - +30%",
+        "Бесплатный 10-секундный тест на вашем живом тайтле - чтобы проверить нас до первого счёта",
+        "48 часов до первой партии, дальше - недельные батчи под ваш план тестов",
+        "Хук не прошёл ваше ревью - заменяем бесплатно; исходники и проектные файлы передаём",
+        "Белая этикетка: без нашего бренда в роликах и переписке, NDA, маркировка AI по правилам Meta и TikTok",
+      ],
+      en: [
+        "€150–200 per 15–30 s video in 9:16, 1:1 and 16:9; €50 per hook variation; 24-hour rush +30%",
+        "A free 10-second test on your live title - so you can check us before the first invoice",
+        "48 hours to the first batch, then weekly batches aligned with your test plan",
+        "A hook fails your review - we replace it for free; source and project files are handed over",
+        "White-label: no Nitroreel branding in videos or correspondence, NDA, AI disclosure per Meta and TikTok rules",
+      ],
+    },
+    faq: [
+      {
+        q: { ru: "Какой минимальный объём?", en: "What's the minimum volume?" },
+        a: {
+          ru: "Минимума нет: первый заказ может быть и на 3 ролика. Постоянным партнёрам держим слот под 20–40 вариаций в неделю.",
+          en: "No minimum: a first order can be 3 videos. For regular partners we reserve capacity for 20–40 variations a week.",
+        },
+      },
+      {
+        q: { ru: "Как проходит бесплатный тест?", en: "How does the free test work?" },
+        a: {
+          ru: "Вы присылаете тайтл и 2–3 строки про то, что сейчас тестируете. Через 48 часов получаете 10-секундный хук в 9:16 без водяных знаков. Нам в обмен ничего не нужно.",
+          en: "You send the title and 2–3 lines on what you're testing now. In 48 hours you get a 10-second 9:16 hook with no watermarks. We ask nothing in return.",
+        },
+      },
+    ],
+  },
   {
     slug: "ua-video-hypercasual",
     metaTitle: {
@@ -81,12 +143,12 @@ export const seoPages: SeoPage[] = [
   {
     slug: "ua-video-midcore-rpg",
     metaTitle: {
-      ru: "UA-креативы для midcore и RPG игр | Nitroreel",
-      en: "UA creatives for midcore and RPG games | Nitroreel",
+      ru: "UA-креативы для midcore и RPG: батч за 10 дней | Nitroreel",
+      en: "UA video ads for midcore & RPG games, 10-day batch | Nitroreel",
     },
     metaDescription: {
-      ru: "UA и перформанс-креативы для midcore и RPG: реальная механика вместо постановки, адаптации под Google Ads UA, Meta Ads, Unity Ads.",
-      en: "UA and performance creatives for midcore and RPG titles: real mechanics instead of staging, adapted for Google Ads UA, Meta Ads, Unity Ads.",
+      ru: "Видеокреативы для midcore и RPG: батч из 10 роликов с хук-нарезками за 10 дней, от 216 000 ₽. Под Meta Ads, TikTok, Google UA и Unity Ads.",
+      en: "Video ad creatives for midcore and RPG games: a batch of 10 with hook cutdowns in 10 days, from €2,160. For Meta Ads, TikTok, Google UA and Unity Ads.",
     },
     eyebrow: { ru: "UA-видео · Midcore / RPG", en: "UA video · Midcore / RPG" },
     h1: { ru: "UA и перформанс-креативы для midcore и RPG", en: "UA and performance creatives for midcore and RPG" },
@@ -257,10 +319,13 @@ export const seoPages: SeoPage[] = [
   },
   {
     slug: "cinematic-trailer",
-    metaTitle: { ru: "Cinematic-трейлер для мобильной игры | Nitroreel", en: "Cinematic trailer for a mobile game | Nitroreel" },
+    metaTitle: {
+      ru: "Cinematic-трейлер для мобильной игры от 75 000 ₽ | Nitroreel",
+      en: "Cinematic trailer for mobile games, from €750 | Nitroreel",
+    },
     metaDescription: {
-      ru: "Продакшн cinematic-трейлеров для мобильных игр: сюжетная структура, CGI и 3D-рендеры, синхронизация с анонсом или обновлением.",
-      en: "Cinematic trailer production for mobile games: story structure, CGI and 3D renders, synced with an announcement or update.",
+      ru: "Cinematic-трейлер 45–60 сек для мобильной игры: сюжет, AI-генерация и рендеры, звук и монтаж. От 75 000 ₽, срок — 1–3 недели.",
+      en: "45–60 sec cinematic trailer for your mobile game: story, AI generation and renders, sound and edit in one studio. From €750, 1–3 weeks.",
     },
     eyebrow: { ru: "Трейлеры · Cinematic", en: "Trailers · Cinematic" },
     h1: { ru: "Cinematic-трейлер для мобильной игры", en: "Cinematic trailer for a mobile game" },

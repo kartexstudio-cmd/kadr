@@ -30,6 +30,7 @@ export async function generateMetadata({
     metadataBase: new URL(site.url),
     title: page.metaTitle[lang],
     description: page.metaDescription[lang],
+    robots: page.hidden ? { index: false, follow: false } : undefined,
     alternates: {
       canonical: `/${lang}/services/${slug}`,
       languages: Object.fromEntries(locales.map((locale) => [locale, `/${locale}/services/${slug}`])),

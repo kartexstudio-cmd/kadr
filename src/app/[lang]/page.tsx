@@ -215,7 +215,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
               {t.services.moreLabel}
             </p>
             <div className="flex flex-wrap gap-2.5">
-              {seoPages.map((page) => (
+              {seoPages.filter((page) => !page.hidden).map((page) => (
                 <a
                   key={page.slug}
                   href={`/${lang}/services/${page.slug}`}

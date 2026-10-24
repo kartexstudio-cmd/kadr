@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   }));
 
-  const services = seoPages.flatMap((page) =>
+  const services = seoPages.filter((page) => !page.hidden).flatMap((page) =>
     locales.map((locale) => ({
       url: `${site.url}/${locale}/services/${page.slug}`,
       lastModified: new Date(),
